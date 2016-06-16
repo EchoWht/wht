@@ -1,0 +1,61 @@
+[ 2016-04-03T13:21:48+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002686s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000819s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001970s ]
+
+[ 2016-04-03T14:10:26+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004030s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0359s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="wang" ) ORDER BY noteid desc  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000687s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003184s ]
+
+[ 2016-04-03T14:11:00+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003115s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="wang" ) ORDER BY noteid desc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000387s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000877s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001951s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002772s ]
+

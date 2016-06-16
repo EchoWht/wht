@@ -1,0 +1,73 @@
+/***************提示框的头****************/
+
+.maintip-title {}
+
+
+/***************关闭提示框按钮****************/
+
+.maintip-title,
+.close {
+	background: #fff;
+	border: 0px;
+	font-size: 20px;
+	float: right;
+	margin: 10px;
+	padding: 0px;
+}
+
+
+/***************提示框的主体****************/
+
+.maintip-body {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+/***************提示框的脚****************/
+
+.maintip-foot {
+	margin-bottom: 50px;
+}
+
+.maintip-foot a {
+	text-align: center;
+	margin-left: 0px;
+}
+/****************遮盖层***************/
+
+#mask {
+	display: none;
+	background: #000;
+	opacity: 0.3;
+	filter: Alpha(opacity=30);
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 3000;
+}
+
+
+/****************提示层主框***************/
+
+#maintip {
+	display: none;
+	border: 1px solid #888888;
+	background: #fff;
+	max-width: 300px;
+	text-align: center;
+	-moz-box-shadow: 0px 0px 20px #888888;
+	/* 老的 Firefox */
+	box-shadow: 0px 0px 20px #888888;
+	z-index: 3001;
+	position: fixed;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 25%;
+}

@@ -1,0 +1,76 @@
+<include file="./Public/Template/lib/cssjs/head-blog-index.html" title='Blog-Blskye'/>
+<body>
+<div class="button-top" id="top-bt">
+    <a href="#about"><i class="fa fa-sort-desc fa-3x"></i></a>
+</div>
+<!-- NAVBAR Start -->
+<include file="./Public/Template/lib/nav/nav-blog.html"/>
+<!-- NAVBAR END -->
+<!--add by wht-->
+<!-- Page Content -->
+<div class="container black-link-content">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 id="blog-home" class="page-header">{$name}'s Blog
+               
+            </h1>
+           
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+            <!-- First Blog Post -->
+
+            <volist name="list" id="vo" empty="暂时没有数据">
+              <div  style="padding:10px;border-bottom:1px solid #f5f5f5;border-radius:5px;margin-bottom:20px">
+							<h4>
+								<a href="{:U('/Blog/Index/readMore')}/?artid={$vo.artid}">{$vo.arttitle}</a>
+							</h4>
+							<ul class="list-inline" style="color: #c0c0c0">
+							    <li>
+									<img style="width: 16px;border-radius: 50%;line-height:50px" alt="{$vo.username}"
+									src="/Public/images/icon/{$vo.username}.jpg"
+									onerror="this.src='/Public/images/icon/default.jpg'"/>
+									<a href="{:U('User/Index/index')}?u={$vo.username}">{$vo.username}</a>
+								</li>
+								<li>
+									<span class="fa fa-tag"></span> <span>{$vo.artremark1}</span>
+								</li>
+								<li>
+									<span class="fa fa-clock-o"></span>{$vo.artdate}	
+								</li>
+							</ul>
+                        <div class="blog-content"> {$vo.artcontent}
+                        </div>
+                        <!--<a class="btn btn-primary" href="{:U('/Home/Blog/readMore')}/?artid={$vo.artid}">Read More <i-->
+                                <!--class="fa fa-angle-right"></i></a>-->
+                    </div>
+            </volist>
+            <!-- Pager -->
+            <nav>{$page}</nav>
+        </div>
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col-md-4">
+            <include file="./Public/Template/lib/ot/blog-sidewell.html" blogsearchtitle="输入关键词回车搜索"
+                     blogsearchaction="./"
+                    />
+        </div>
+    </div>
+    <!-- /.row -->
+    <hr>
+</div>
+<include file="./Public/Template/lib/tip.html"/>
+
+<include file="./Public/Template/lib/ot/copyright.html"/>
+
+
+<!-- JAVASCRIPT
+================================================== -->
+
+<include file="./Public/Template/lib/cssjs/foot-blog-add.html"/>

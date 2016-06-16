@@ -1,0 +1,34 @@
+.note-fire{
+    color: #edbc6c;
+}
+.note-del a{
+    color: #e36159;
+}
+.note-share a{
+    color: #2baab1;
+}
+
+.logo {
+    width: 40px;
+    line-height: 50px;
+    float: left;
+}
+
+.navbar-brand {
+    background: url("/Public/images/logo-z-100.png") no-repeat left center;
+    background-size: 40px;
+    padding-left: 50px;
+}
+.urlcontent{
+    width: 100%;border: 0px;
+}
+.urlcontent:focus{
+    height: 50px;
+}
+.urltitle{
+    width: 100%;text-align: center;border: 0px
+}
+
+.panel-body p{
+    height: 25px;OVERFLOW-Y: auto;
+}

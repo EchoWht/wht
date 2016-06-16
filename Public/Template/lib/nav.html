@@ -1,0 +1,66 @@
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-fixed-top">
+			<div class="rainbow-wapper">
+				<div class="rainbow rainbow1"></div>
+				<div class="rainbow rainbow2"></div>
+				<div class="rainbow rainbow3"></div>
+				<div class="rainbow rainbow4"></div>
+			</div>
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" class="logo" src="/Public/images/logo-z.png" />
+					</a>
+					<a class="navbar-brand" href="#">NoteBlog</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">链接</a></li>
+						<li><a href="#contact">文字</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">大厅 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Nav header</li>
+								<li><a href="#">Separated link</a></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li>
+							<form class="navbar-form navbar-right">
+								<input type="text" class="form-control" placeholder="Search...">
+							</form>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-plus"></span></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<span  class="glyphicon glyphicon-user common-logo"></span>Hello {$name}<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="/NotesBlog/passport/">查看个人资料</a></li>
+								<li><a href="/NotesBlog/login/signout.php">退出</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<!--/.nav-collapse -->
+			</div>
+
+		</nav>

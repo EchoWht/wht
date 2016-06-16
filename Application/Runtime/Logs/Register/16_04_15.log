@@ -1,0 +1,11 @@
+[ 2016-04-15T21:33:13+08:00 ] 127.0.0.1 /index.php/Register/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002881s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0009s ]
+ERR: 模板不存在:./Public/Template/Register/default/Index/index.html
+

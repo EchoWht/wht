@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+
+</head>
+<body>
+<h1> {$loginuser.name}</h1>
+<table border="1px">
+    <tr><th>ID</th><th>Name</th></tr>
+    <volist name="myuser" id="vo">
+        <tr><td>{$vo.id}</td><td>{$vo.name}</td></tr>
+    </volist>
+
+</table>
+</body>

@@ -1,0 +1,181 @@
+<!-- JAVASCRIPT
+================================================== -->
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script type="text/javascript" src="/Public/bootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- CUSTOM JAVASCRIPT -->
+<!-- Custom Functions -->
+<script type="text/javascript" src="/Public/home/style_one/js/functions.js"></script>
+
+<!-- Portfolio with mixitup filter and prettyphoto -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.mixitup.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script type="text/javascript" src="/Public/home/style_one/js/magnific.js"></script>
+
+<!-- BxSlider -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.bxslider.min.js"></script>
+
+<!-- Sequence Slider -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.sequence-min.js"></script>
+
+<!-- Parallax Background -->
+<script type="text/javascript" src="/Public/home/style_one/js/nbw-parallax.js"></script>
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.inview.js"></script>
+
+<!-- Smooth Scrolling -->
+<script type="text/javascript" src="/Public/home/style_one/js/smoothscroll.js"></script>
+
+<!-- Sticky Navigation -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.sticky.js"></script>
+
+<!-- Style Switcher -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.style-switcher.js"></script>
+
+<!-- Clients Slider -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.flexisel.js"></script>
+
+<!-- Retina JS -->
+<script type="text/javascript" src="/Public/home/style_one/js/retina-1.1.0.min.js"></script>
+<script src="/Public/bootstrapvalidator/js/bootstrapValidator.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#contactForm').bootstrapValidator({
+            message: 'This value is not valid',
+            //live: 'disabled',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+
+            fields: {
+                username: {
+                    message: 'The username is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: '用户名不能空着哟(¬д¬。) '
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 30,
+                            message: '不能超过30位(¬д¬。) '
+                        },
+
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_\.]+$/,
+                            message: '用户名不要带特殊字符(¬д¬。) '
+                        }
+                    }
+                },
+                email: {
+                    message: '邮箱合法哟(¬д¬。)',
+                    validators: {
+                        notEmpty: {
+                            message: '邮箱不能空着哟(¬д¬。) '
+                        }
+                    }
+                },
+                content: {
+                    message: '不能为空',
+                    validators: {
+                        notEmpty: {
+                            message: '内容不能空着哟(¬д¬。) '
+                        },
+                        stringLength: {
+                            min: 5,
+                            message: '太抠了5个字都没写够(¬д¬。) '
+                        }
+                    }
+                }
+            }
+        });
+    });
+
+
+</script>
+<script>
+    var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    var randomScalingFactor = function() {
+        return Math.round(Math.random() * 100);
+        //return 0;
+    };
+    var randomColorFactor = function() {
+        return Math.round(Math.random() * 255);
+    };
+    var randomColor = function(opacity) {
+        return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+    };
+
+    var config = {
+        type: 'line',
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: "访问量统计",
+                data: [24, 56,564, 7, 56, 99, 2],
+                // fill: false,
+                //borderDash: [5, 5],
+            }]
+        },
+        options: {
+            responsive: true,
+            title:{
+                display:true,
+                text:'访问量统计'
+            },
+            tooltips: {
+                mode: 'label',
+                callbacks: {
+
+                }
+            },
+            hover: {
+                mode: 'dataset'
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        show: true,
+                        labelString: 'Month'
+                    }
+                }],
+                yAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        show: true,
+                        labelString: 'Value'
+                    },
+                    ticks: {
+                        suggestedMin: 0,//负数代表-y
+                        suggestedMax: 250,
+                    }
+                }]
+            }
+        }
+    };
+
+    $.each(config.data.datasets, function(i, dataset) {
+        dataset.borderColor = randomColor(0.4);
+        dataset.backgroundColor = randomColor(0.5);
+        dataset.pointBorderColor = randomColor(0.7);
+        dataset.pointBackgroundColor = randomColor(0.5);
+        dataset.pointBorderWidth = 1;
+    });
+
+    window.onload = function() {
+        var ctx = document.getElementById("canvas").getContext("2d");
+        window.myLine = new Chart(ctx, config);
+//        console.log(config.data.datasets.data);
+        console.log(config.data.labels);
+    };
+
+
+
+</script>
+
+</body>
+</html>

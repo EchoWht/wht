@@ -1,0 +1,143 @@
+<include file="./Public/Template/lib/cssjs/head-note.html" title='Note-Blskye'/>
+<body>
+<div class="button-top" id="top-bt">
+    <a href="#note"><i class="fa fa-sort-desc fa-3x"></i></a>
+</div>
+
+<include file="./Public/Template/lib/nav/nav-note.html"/>
+<!-- NAVBAR END -->
+<!--add by wht-->
+<!-- Page Content -->
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 id="note" class="page-header">Note
+                <small>{$name}</small>
+            </h1>
+
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Image Header -->
+    <!--<div class="row">-->
+        <!--<div class="col-lg-12">-->
+            <!--<img class="img-responsive" src="http://placehold.it/1200x300" alt="">-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- /.row -->
+
+    <!-- Service Panels -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <div class="row">
+        <!--<div class="filter-list">-->
+            <!--<ul class="nav nav-pills">-->
+                <!--<li><a class="filter" data-filter="all">全部</a></li>-->
+                <!--<li><a class="filter" data-filter="cat_php">PHP</a></li>-->
+                <!--<li><a class="filter" data-filter="cat_web">Web</a></li>-->
+                <!--<li><a class="filter" data-filter="cat_java">其他</a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+<!--<hr class="head-border-grey">-->
+        <div class="clearfix"></div>
+            <volist name="mynote" id="vo" empty="暂时没有数据">
+            <div class="col-md-3 col-sm-6 cat_{$vo.noteremark1} all">
+                <div class="panel panel-success text-center">
+                    <div class="panel-heading">
+                        <img style="height: 32px"  class="center-block " src="http://<?php echo getIco($vo['noteurl'])?>/favicon.ico"
+                             onerror="this.src='http://blskye.com/favicon.ico'"/>
+                    </div>
+                    <form class="grid_form" method="post" action="{$update}">
+                        <input type="hidden" name="noteid" id="noteid" value="{$vo.noteid}" />
+                    <div class="panel-body">
+                        <h6>
+                            <!--<input class="urltitle"-->
+                                   <!--onblur="updateNoteTip({$vo.noteid},this.value)"-->
+                                   <!--value="{$vo.noteremark1}" name="noteremark1" />-->
+                            <select class="form-control" name="noteremark1" id="classification"  onblur="updateNoteTip({$vo.noteid},this.value)">
+                               <option>{$vo.noteremark1}</option>
+                                <volist name="catlist" id="volist" empty="暂时没有数据">
+                                    <option>
+                                        {$volist.catname}
+                                    </option>
+                                </volist>
+                            </select>
+                        </h6>
+                        <p>{$vo.notetitle}</p>
+                        <textarea class="urlcontent" name="notecontent" onblur="updateNoteContent({$vo.noteid},this.value)"
+                                  rows="1" cols="" class="grid_textarea">{$vo.notecontent}</textarea>
+                        <a onclick="noteclick({$vo.noteid})" href="{$vo.noteurl}" target="_blank" class="btn btn-default">打开</a>
+                    </div>
+                    <div class="panel-footer">
+                        <ul class="list-inline">
+                            <li class="note-fire"><span class="fa fa-fire"></span> {$vo.noteclick}</li>
+                            <!--<li> <a  href=""><span class="glyphicon glyphicon-heart"></span></a></li>-->
+                            <li class="note-del"><a  href="javascript:void(0);" onclick="deleteNote({$vo.noteid});"><span class="glyphicon glyphicon-trash"></span></a></li>
+                            <li class="note-share"> <a href=""><span class="glyphicon glyphicon-share-alt"></span></a></li>
+
+                        </ul>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            </li>
+        </volist>
+
+    </div>
+    <nav class="black-link-content">{$page}</nav>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">增加个Note</h4>
+            </div>
+            <form method="post" action="{$add}" id="addNoteForm" name="addNoteForm">
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label class="sr-only" for="noteurl">URL</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">URL</div>
+                            <input type="text" name="noteurl" class="form-control" id="noteurl" placeholder="http://....">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select name="noteremark1" id="noteremark1" class="form-control w100">
+
+                                <volist name="catlist" id="vo">
+                                    <option>
+                                        {$vo.catname}
+                                    </option>
+                                </volist>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="notecontent" id="notecontent" class="form-control w100" rows="3" placeholder="也可以不填"></textarea>
+                    </div>
+                    <div id="addinfo"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="addNote()" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<include file="./Public/Template/lib/tip.html"/>
+
+<include file="./Public/Template/lib/ot/copyright.html"/>
+<!-- COLOR SWITCH END -->
+
+<!-- END PRIMARY LAYOUT
+====================== -->
+
+
+<include file="./Public/Template/lib/cssjs/foot-note.html"/>

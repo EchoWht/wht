@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="/Public/blog/css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="/Public/blog/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/Public/blog/fonts/font-awesome-4.3.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/Public/blog/css/style1.css"/>
+	<style>
+		.write{
+			margin: 10px;
+		}
+	</style>
+	<script src="/Public/blog/js/modernizr.custom.js"></script>
+	<link rel="stylesheet" href="/Public/highlight/styles/zenburn.css">
+	<!--阅读显示页面样式-->
+	<script src="/Public/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!--[if IE]>
+	<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+	<script src="/Public/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+<div class="container">
+	<button id="menu-toggle" class="menu-toggle"><span>Menu</span></button>
+	<div id="theSidebar" class="sidebar">
+		<button class="close-button fa fa-fw fa-close"></button>
+		<div class="htmleaf-links">
+			<a class="htmleaf-icon icon-htmleaf-home-outline" href="{:U('Home/Index/index')}" title=""
+			   target="_blank"><span> </span></a>
+			<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline"
+			   href="http://www.htmleaf.com/html5/html5muban/201504161688.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+		</div>
+		<h1>{$name}</h1>
+		<ul>
+			<li><a href="{:U('Home/Index/index')}"><i class="fa fa-home"></i>主页</a></li>
+			<li><a href="{:U('Note/Index/index')}"><i class="fa fa-paperclip"></i>Note</a></li>
+			<li><a href="{:U('Blog/Index/index')}"><i class="fa fa-file-text"></i>Blog</a></li>
+			<li><a href="{:U('Blog/Index/add')}"><i class="fa fa-plus-square-o"></i>新建</a></li>
+		</ul>
+	</div>
+	<div id="theGrid" class="main">
+		<section class="write">
+			<h1>写</h1>
+			<form id="addblog" method="post" action="{:U('index/addBlog')}">
+				标题：<input type="text" name="arttitle" id="arttitle" />
+				<select name="classification" id="classification">
+					<option>
+						web前端
+					</option>
+					<option>
+						Java
+					</option>
+					<option>
+						PHP
+					</option>
+					<option>
+						SQL
+					</option>
+					<option>
+						文学
+					</option>
+					<option>
+						历史
+					</option>
+					<option>
+						其他
+					</option>
+				</select>
+				<textarea style="width: 100%" rows="30" cols="50" name="artcontent">Hello World.</textarea>
+				<script type="text/javascript">CKEDITOR.replace('artcontent');</script>
+				<button type="button" id="fabiao" onclick="sub_art()">
+					发表
+				</button>
+			</form>
+		</section>
+	</div>
+</div>
+<!-- /container -->
+
+<script src="/Public/blog/js/classie.js"></script>
+<script src="/Public/blog/js/main.js"></script>
+<script>
+var fabiao=document.getElementById('fabiao');
+var arttitle=document.getElementById('arttitle');
+var addblog=document.getElementById('addblog');
+function  sub_art(){
+	if(arttitle.value==''){
+		arttitle.onfocus;
+		arttitle.style.cssText='border-color:red';
+	}else{
+		addblog.submit();
+	}
+}
+	arttitle.onclick=function () {
+		arttitle.style.cssText='border-color:#c0c0c0';
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<include file="./Public/Template/lib/cssjs/head-blog-add.html" title='写一篇Blog-Blskye'/>
+<body>
+<div class="button-top" id="top-bt">
+    <a href="#about"><i class="fa fa-sort-desc fa-3x"></i></a>
+</div>
+<!-- NAVBAR Start -->
+<include file="./Public/Template/lib/nav/nav-blog.html"/>
+
+
+<!-- NAVBAR END -->
+<!--add by wht-->
+<!-- Page Content -->
+<div class="container black-link-content">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <form id="addblog" method="post" action="{:U('index/addBlog')}">
+                <input type="hidden" name="artid" value="{$myblog[0][artid]}">
+
+                <h5 class="page-header">
+                    <input  class="form-control"  type="text" name="arttitle" id="arttitle" placeholder="在此填写标题">
+                   
+                </h5>
+                <!--<ol class="breadcrumb">-->
+                <!--<li><a href="index.html">Home</a>-->
+                <!--</li>-->
+                <!--<li><a href="index.html">Blog</a>-->
+                <!--</li>-->
+                <!--<li class="active">新建</li>-->
+                <!--</ol>-->
+
+        </div>
+    </div>
+    <!-- Content Row -->
+    <div class="row">
+
+        <!-- Blog Post Content Column -->
+        <div class="col-lg-12">
+
+            <!-- Blog Post -->
+
+
+            <!-- Date/Time -->
+            <!--<p><i class="fa fa-clock-o"></i> 发表时间： {$myblog[0][artdate]}</p>-->
+
+            <!--<hr>-->
+            <div>
+                分类： <select name="classification" id="classification">
+                <volist name="catlist" id="vo" empty="暂时没有数据">
+                    <option>
+                        {$vo.catname}
+                    </option>
+                </volist>
+            </select>
+                <a href="{:U('/User/Set/setcat')}" target="_blank"><span class="glyphicon glyphicon-plus"></span></a>
+
+                <span>&nbsp;&nbsp;&nbsp;状态：</span>
+                <label class="radio-inline">
+                    公开<input type="radio" name="ispublic" checked value="1">
+                </label>
+                <label class="radio-inline">
+                    私有<input type="radio" name="ispublic" value="0">
+                </label>
+            </div>
+            <br>
+
+            <p>
+                <textarea rows="30" cols="50" name="artcontent"></textarea>
+                <script type="text/javascript">CKEDITOR.replace('artcontent');</script>
+            </p>
+            <button class="btn btn-success" type="button" id="fabiao" onclick="sub_art()">
+                发表
+            </button>
+            <hr>
+            </form>
+            <!-- Blog Comments -->
+
+            <!-- Comments Form -->
+
+        </div>
+
+        <!-- Blog Sidebar Widgets Column -->
+        <!--<div class="col-md-4">-->
+
+        <!--</div>-->
+
+    </div>
+    <!-- /.row -->
+
+
+</div>
+
+<include file="./Public/Template/lib/tip.html"/>
+
+
+<include file="./Public/Template/lib/ot/copyright.html"/>
+
+
+<!-- JAVASCRIPT
+================================================== -->
+
+<include file="./Public/Template/lib/cssjs/foot-blog-add.html"/>

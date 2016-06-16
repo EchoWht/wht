@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{$name}的Note</title>
+		<meta name="description" content="Demo of the tutorial on how to re-create a similar effect of the takeitapp.co website." />
+		<meta name="keywords" content="responsive, grid, polaroid, animation, intro, web design, tutorial, responsive images, srcset" />
+
+		<link href='http://fonts.useso.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="/Public/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/Public/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/Public/css/note/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/Public/css/note/square-loader.min.css" />
+		<link rel="stylesheet" type="text/css" href="/Public/css/note/demo.css" />
+		<link rel="stylesheet" type="text/css" href="/Public/css/note/component.css" />
+		<link rel="stylesheet" type="text/css" href="/Public/css/theme.css" />
+		<link rel="stylesheet" type="text/css" href="/Public/css/tip.css" />
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script>
+			document.documentElement.className = 'js';
+		</script>
+	</head>
+
+	<body>
+		<div class="view">
+			<include file="./Public/Template/lib/default/nav.html" title='Login' css='signin' />
+
+			<section class="page page--mover">
+				<div class="la-square-loader">
+					<div></div>
+				</div>
+			</section>
+			<div class="title-wrap">
+				<h1 class="title title--main">OH<em>!</em>NOTE</h1>
+				<!--<p class="title title--sub">Smart Auto-Filtering for your shots.</p>-->
+			</div>
+			<section class="page page--static">
+				<div class="page__title">
+					<h2 class="page__title-main">Polaroid Stack to Grid Intro Animation</h2>
+					<p class="page__title-sub">Recreating the effect seen on the <a href="http://www.takeitapp.co/en">takeit</a> website</p>
+				</div>
+				<ul class="grid">
+					<volist name="mynote" id="vo">
+						<li class="grid__item">
+							<div class="grid__box">
+								<a href="{$vo.noteurl}" target="_blank">
+									<h3 class="grid__item-title">{$vo.notetitle}</h3>
+								</a>
+								<div class="grid_bg_{$vo.noteremark1}">
+									<form class="grid_form" method="post" action="{$update}">
+										<input type="hidden" name="noteid" id="noteid" value="{$vo.noteid}" />
+										<textarea name="notecontent" onblur="updateNoteContent({$vo.noteid},this.value)"  rows="6" cols="" class="grid_textarea">{$vo.notecontent}</textarea>										
+										<div class="grid_foot">
+											<input class="fl grid_input"  onblur="updateNoteTip({$vo.noteid},this.value)" value="{$vo.noteremark1}" name="noteremark1" />
+											<!--<button class="fl grid_a_other" type="submit">ok</button>-->
+											<a class="grid_a_other" href=""><span class="glyphicon glyphicon-heart"></span></a>
+											<a class="grid_a_other" href="javascript:void(0);" onclick="deleteNote({$vo.noteid});"><span class="glyphicon glyphicon-trash"></span></a>
+											<a class="grid_a_other" href=""><span class="glyphicon glyphicon-share-alt"></span></a>										
+										</div>
+									</form>
+								</div>
+							</div>
+						</li>
+					</volist>
+
+				</ul>
+				<!--<button class="button button--load" aria-label="Load more images">
+					<svg class="polaroid" width="100%" height="100%" viewBox="0 0 220 243" preserveAspectRatio="xMidYMid meet">
+						<rect class="polaroid__base" x="0" y="0" width="220" height="243" rx="5"></rect>
+						<rect class="polaroid__inner" x="16" y="20" width="189" height="149"></rect>
+						<g class="polaroid__loader">
+							<circle cx="61.5" cy="94.5" r="17.5"></circle>
+							<circle cx="110.5" cy="94.5" r="17.5"></circle>
+							<circle cx="159.5" cy="94.5" r="17.5"></circle>
+						</g>
+					</svg>
+					<span class="button__text">Load more</span>
+				</button>-->
+			</section>
+			<div class="device">
+				<div class="device__screen">
+					<h1>Hi Note!</h1>
+				</div>
+			</div>
+			<button id="showgrid" class="button button--view" aria-label="Show me more">
+				<svg width="100%" height="100%" viewBox="0 0 310 177" preserveAspectRatio="xMidYMid meet">
+					<path fill="#FFFFFF" d="M159.875,174.481L306.945,27.41c2.93-2.929,2.93-7.678,0-10.606L292.803,2.661c-1.406-1.407-3.314-2.197-5.303-2.197c-1.989,0-3.896,0.79-5.303,2.197L154.572,130.287L26.946,2.661c-1.406-1.407-3.314-2.197-5.303-2.197c-1.989,0-3.897,0.79-5.303,2.197L2.197,16.804C0.733,18.269,0,20.188,0,22.107s0.732,3.839,2.197,5.303l147.071,147.071C152.197,177.411,156.945,177.411,159.875,174.481L159.875,174.481z"
+					/>
+				</svg>
+			</button>
+
+		</div>
+		<!-- /view -->
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">增加个Note</h4>
+					</div>
+					<form method="post" action="{$add}" id="addNoteForm" name="addNoteForm">
+						<div class="modal-body">
+							
+							<div class="form-group">
+								<label class="sr-only" for="noteurl">URL</label>
+								<div class="input-group">
+									<div class="input-group-addon">URL</div>
+									<input type="text" name="noteurl" class="form-control" id="noteurl" placeholder="http://....">
+								</div>
+							</div>
+							<div class="form-group">
+								<select name="noteremark1" id="noteremark1" class="form-control w100">
+									<option>web</option>
+									<option>php</option>
+									<option>java</option>
+									<option>js</option>
+									<option>sql</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<textarea name="notecontent" id="notecontent" class="form-control w100" rows="3" placeholder="也可以不填"></textarea>
+							</div>
+							<div id="addinfo"></div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" onclick="addNote()" class="btn btn-primary">Save</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<include file="./Public/Template/lib/tip.html"/>
+		<script src="/Public/bootstrap/js/jquery.min.js"></script>
+		<script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/Public/js/note/dynamics.min.js"></script>
+		<script src="/Public/js/note/classie.js"></script>
+		<script src="/Public/js/note/dynamics.min.js"></script>
+		<script src="/Public/js/note/imagesloaded.pkgd.min.js"></script>
+		<script src="/Public/js/note/main.js"></script>
+		<script src="/Public/js/func.js"></script>
+	</body>
+
+</html>

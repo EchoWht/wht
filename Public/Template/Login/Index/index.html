@@ -1,0 +1,21 @@
+<include file="./Public/Template/lib/header.html" title='Login' css='signin' />
+
+<body>
+	<div class="container">
+		<form class="form-signin" action="{$login}" method="post">
+			<h2 class="form-signin-heading">Please sign in</h2>
+			<label for="username" class="sr-only">Email address</label>
+			<input type="text" id="username" name="username" value="" class="form-control" placeholder="Username" required autofocus>
+			<label for="passwd" class="sr-only">Password</label>
+			<input type="password" name="passwd" value="" id="passwd" class="form-control" placeholder="Password" required>
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" value="remember-me"> Remember me
+				</label>
+			</div>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		</form>
+	</div>
+</body>
+
+</html>

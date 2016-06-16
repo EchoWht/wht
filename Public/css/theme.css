@@ -1,0 +1,98 @@
+body {
+	/*padding-top: 70px;*/
+	padding-bottom: 30px;
+}
+.w100{
+	width: 100%;
+}
+.theme-dropdown .dropdown-menu {
+	position: static;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+	margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+	width: auto;
+}
+
+.list-unstyled li {
+	padding: 3px 0px;
+}
+
+.panel:hover .panel-foot a {
+	display: inline;
+}
+.navbar-fixed-top .navbar-collapse {
+    max-height: 640px;
+}
+.navbar-form{
+	margin-right: 0px;
+}
+/*.panel:hover a{
+	display: none;
+}*/
+
+.rainbow {
+	height: 2px;
+	float: left;
+	width: 25%;
+}
+
+.rainbow1 {
+	background: red;
+}
+
+.rainbow2 {
+	background: #337ab7;
+}
+
+.rainbow3 {
+	background: #FFB90F;
+}
+
+.rainbow4 {
+	background: #8FBC8F;
+}
+.navbar-toggle{
+	background: #8FBC8F;
+}
+.navbar-toggle span{
+	background: #EFF7FF;
+}
+.common-logo{
+	background: #FFB90F;
+	/*padding-top: 6px;*/
+	border-radius:50% ;
+}
+.hot {
+	float: right;
+}
+
+.panel-foot {
+	float: right;
+}
+
+.panel-foot a {
+	display: none;
+}
+
+.panel-foot-ico {
+	float: left;
+}
+
+.ico {
+	height: 20px
+}
+
+.logo {
+	width: 30px;
+	margin-top: -6px;
+}
+
+.navbar {
+	background-color: #EFF7FF
+}

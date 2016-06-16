@@ -1,0 +1,834 @@
+[ 2016-04-16T09:48:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-04-16T09:50:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T09:58:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0310s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="0" ) LIMIT 1   [ RunTime:0.2500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-16T10:03:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0040s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="0" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:05:59+08:00 ] 127.0.0.1 /index.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Api
+
+[ 2016-04-16T10:06:12+08:00 ] 127.0.0.1 /index.php/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Home
+
+[ 2016-04-16T10:06:37+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 无法加载控制器:Note
+
+[ 2016-04-16T10:06:57+08:00 ] 127.0.0.1 /index.php/Api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Api
+
+[ 2016-04-16T10:07:07+08:00 ] 127.0.0.1 /index.php/Api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:07:08+08:00 ] 127.0.0.1 /index.php/Api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:07:08+08:00 ] 127.0.0.1 /index.php/Api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:07:08+08:00 ] 127.0.0.1 /index.php/Api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:07:14+08:00 ] 127.0.0.1 /index.php/api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:07:25+08:00 ] 127.0.0.1 /index.php/api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:07:30+08:00 ] 127.0.0.1 /index.php/api/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:08:05+08:00 ] 127.0.0.1 /index.php/api/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:08:06+08:00 ] 127.0.0.1 /index.php/api/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:08:06+08:00 ] 127.0.0.1 /index.php/api/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:08:06+08:00 ] 127.0.0.1 /index.php/api/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:08:46+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:09:11+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Api
+
+[ 2016-04-16T10:09:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:09:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:10:07+08:00 ] 127.0.0.1 /index.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:11:39+08:00 ] 127.0.0.1 /index.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:11:39+08:00 ] 127.0.0.1 /index.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:11:39+08:00 ] 127.0.0.1 /index.php/api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:12:53+08:00 ] 127.0.0.1 /index.php/api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:13:11+08:00 ] 127.0.0.1 /index.php/api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-04-16T10:13:31+08:00 ] 127.0.0.1 /index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Home
+
+[ 2016-04-16T10:13:48+08:00 ] 127.0.0.1 /index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Home
+
+[ 2016-04-16T10:23:54+08:00 ] 127.0.0.1 /index.php/Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:23:59+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:24:02+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:24:17+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-16T10:24:19+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:26:13+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:26:16+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:31:22+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:35:14+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 10:35:14',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-16T10:37:07+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 10:37:07',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:37:51+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="0" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:37:53+08:00 ] 127.0.0.1 /index.php/Api/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="0" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:38:04+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 10:38:04',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:39:03+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 10:39:03',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0030s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`notedate`,`username`,`notetitle`) VALUES ('chrome-extension://hoofhakinakienknnenelbiockcchhhp/html/options.html','2016-04-16 10:39:03','Echo','NotesBlog-选项') [ RunTime:0.0550s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:39:11+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 10:39:11',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0030s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`notedate`,`username`,`notetitle`) VALUES ('http://localhost/phpmyadmin/#PMAURL-5:sql.php?db=noteblog','2016-04-16 10:39:11','Echo','localhost / mysql wampserver / noteblog / nb_note | phpMyAdmin 4.1.14') [ RunTime:0.0380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T10:44:34+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 10:44:33',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.1390s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0110s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('view-source:http://blskye.dev/index.php/Note/Index/index.shtml','other','2016-04-16 10:44:33','Echo','view-source:blskye.dev/index.php/Note/Index/index.shtml') [ RunTime:0.0250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-16T11:03:57+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 11:03:57',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0030s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('http://blskye.dev/index.php/Note/Index/index.shtml','other','2016-04-16 11:03:57','Echo','Echo的Note') [ RunTime:0.0460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T11:09:23+08:00 ] 127.0.0.1 /index.php/Api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0080s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="0" ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T11:09:59+08:00 ] 127.0.0.1 /index.php/Api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0040s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="0" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-16T11:10:33+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 11:10:33',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0200s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('chrome-extension://hoofhakinakienknnenelbiockcchhhp/html/options.html','other','2016-04-16 11:10:33','Echo','NotesBlog-选项') [ RunTime:0.0450s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-16T11:12:12+08:00 ] 127.0.0.1 /index.php/Api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="0" ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-16T11:12:29+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="undefined" ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-16T11:13:36+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0040s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="undefined" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-16T11:14:31+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="undefined" ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-16T11:15:27+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="undefined" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-16T11:16:16+08:00 ] 127.0.0.1 /index.php/Api/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0040s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="0" ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-16T11:16:21+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 11:16:20',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0080s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('http://www.thinkphp.cn/','other','2016-04-16 11:16:20','Echo','ThinkPHP框架 | 中文最佳实践PHP开源框架,专注WEB应用快速开发8年！') [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:17:39+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 11:17:38',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0700s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0070s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('http://www.thinkphp.cn/','other','2016-04-16 11:17:39','Echo','ThinkPHP框架 | 中文最佳实践PHP开源框架,专注WEB应用快速开发8年！') [ RunTime:0.0220s ]
+NOTIC: [8] Undefined variable: myblog D:\wamp\www\wht\Application\Api\Controller\IndexController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:32:33+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 11:32:33',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0020s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('http://www.thinkphp.cn/','other','2016-04-16 11:32:33','Echo','ThinkPHP框架 | 中文最佳实践PHP开源框架,专注WEB应用快速开发8年！') [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:34:46+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 11:34:46',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0890s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0110s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('http://www.thinkphp.cn/','other','2016-04-16 11:34:46','Echo','ThinkPHP框架 | 中文最佳实践PHP开源框架,专注WEB应用快速开发8年！') [ RunTime:0.0390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-04-16T11:35:33+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 11:35:33',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0370s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0030s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('http://www.thinkphp.cn/','other','2016-04-16 11:35:33','Echo','ThinkPHP框架 | 中文最佳实践PHP开源框架,专注WEB应用快速开发8年！') [ RunTime:0.0710s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T14:07:28+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0270s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0340s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 02:07:27',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0856s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0156s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('chrome-extension://hoofhakinakienknnenelbiockcchhhp/html/options.html','other','2016-04-16 02:07:28','Echo','NotesBlog-选项') [ RunTime:0.0468s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T14:07:44+08:00 ] 127.0.0.1 /index.php/Api
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0150s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="Echo" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="Echo" AND passwd="010fa001cc37e229f0200a617f024fc7" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `nb_user` SET `username`='Echo',`passwd`='010fa001cc37e229f0200a617f024fc7',`email`='',`nickname`=NULL,`permission`='0',`registertime`='0000-00-00 00:00:00',`lastlogintime`='2016-04-16 02:07:44',`useronline`='0' WHERE ( username="Echo" ) [ RunTime:0.0440s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0260s ]
+SQL: INSERT INTO `nb_note` (`noteurl`,`noteremark1`,`notedate`,`username`,`notetitle`) VALUES ('http://blskye.dev/index.php/Blog/Index/index.shtml','other','2016-04-16 02:07:44','Echo','Blog') [ RunTime:0.0350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

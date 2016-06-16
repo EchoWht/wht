@@ -1,0 +1,74 @@
+<include file="./Public/Template/lib/header.html" title='Login' css='signin' />
+<link href="/Public/bootstrapvalidator/css/bootstrapValidator.css" type="text/css">
+<script src="/Public/bootstrap/js/jquery.min.js"></script>
+<script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+<script src="/Public/js/jquery-validate.js"></script>
+
+<body>
+	<div class="container">
+		<form class="form-signin" id="loginform" action="{$login}" method="post">
+			<h2 class="form-signin-heading">登录</h2>
+			<label for="username" class="sr-only">Email address</label>
+			<input type="text" id="username" name="username" value=""
+				   class="form-control" placeholder="Username"  required autofocus>
+			<label for="passwd" class="sr-only">Password</label>
+			<input type="password" name="passwd" value="" id="passwd" class="form-control" placeholder="Password" required>
+
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+		</form>
+	</div>
+</body>
+
+<script>
+
+	var validator1;
+	$(document).ready(function () {
+		validator1 = $("#loginform").validate({
+			debug: true,
+			rules: {
+				username: {
+					required: true,
+					minlength: 2,
+					maxlength: 10
+				},
+				passwd: {
+					required: true,
+					minlength: 2,
+					maxlength: 16
+				},
+
+			},
+			messages: {
+				username: {
+					required: '请输入用户名',
+					minlength: '用户名不能小于2个字符',
+					maxlength: '用户名不能超过10个字符'
+//					remote: '用户名不存在'
+				},
+				passwd: {
+					required: '请输入密码',
+					minlength: '密码不能小于2个字符',
+					maxlength: '密码不能超过16个字符'
+				}
+
+			},
+
+			highlight: function(element, errorClass, validClass) {
+				$(element).addClass(errorClass).removeClass(validClass);
+				$(element).fadeOut().fadeIn();
+			},
+			unhighlight: function(element, errorClass, validClass) {
+				$(element).removeClass(errorClass).addClass(validClass);
+			},
+			submitHandler: function (form) {
+				console.log($(form).serialize())
+			}
+		});
+
+		$("#check").click(function () {
+			console.log($("#demoForm").valid() ? "填写正确" : "填写不正确");
+		});
+	});
+	</script>
+
+</html>

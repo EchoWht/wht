@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?rretjt');
+	src:url('../fonts/icomoon.eot?#iefixrretjt') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?rretjt') format('woff'),
+		url('../fonts/icomoon.ttf?rretjt') format('truetype'),
+		url('../fonts/icomoon.svg?rretjt#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a{color: #2fa0ec;text-decoration: none;outline: none;}
+a:hover,a:focus{color:#74777b;}
+
+.htmleaf-demo a{color: #1d7db1;text-decoration: none;}
+.htmleaf-demo{width: 100%;padding-bottom: 1.2em;margin-top: 1em;}
+.htmleaf-demo a{display: inline-block;margin: 0.5em;padding: 0.3em 0.6em;border: 3px solid #1d7db1;font-weight: 700;}
+.htmleaf-demo a:hover{opacity: 0.6;}
+.htmleaf-demo a.current{background:#1d7db1;color: #fff; }
+/* Top Navigation Style */
+.htmleaf-links {
+	position: relative;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.htmleaf-links::after {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1px;
+	width: 2px;
+	height: 100%;
+	background: #dbdbdb;
+	content: '';
+	-webkit-transform: rotate3d(0,0,1,22.5deg);
+	transform: rotate3d(0,0,1,22.5deg);
+}
+
+.htmleaf-icon {
+	display: inline-block;
+	margin: 0.5em;
+	padding: 0em 0;
+	width: 1.5em;
+	text-decoration: none;
+}
+
+.htmleaf-icon span {
+	display: none;
+}
+
+.htmleaf-icon:before {
+	margin: 0 5px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'icomoon';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+.related {
+  font-size: 0.85em;
+  padding-bottom: 1em;
+}
+
+.related h3 {
+  margin: 3em 0 0.5em 0;
+  font-size: 0.95em;
+}
+
+.related a {
+  display: block;
+  color: inherit;
+}
+
+.related a:hover,
+.related a:focus {
+  color: #414741;
+}
+
+/* icomoon */
+.icon-htmleaf-home-outline:before {
+	content: "\e5000";
+}
+
+.icon-htmleaf-arrow-forward-outline:before {
+	content: "\e5001";
+}

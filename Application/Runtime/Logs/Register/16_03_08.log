@@ -1,0 +1,687 @@
+[ 2016-03-08T20:29:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002833s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000211s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000587s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003054s ]
+
+[ 2016-03-08T20:40:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002091s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001849s ]
+
+[ 2016-03-08T20:40:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002600s ]
+ERR: 模板不存在:./Template/Register/Index/index.html
+
+[ 2016-03-08T20:42:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003062s ]
+ERR: 模板不存在:./Public/Template/Register/Index/index.html
+
+[ 2016-03-08T20:43:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002783s ]
+ERR: 模板不存在:./Public/Template/Register/Index/index.html
+
+[ 2016-03-08T20:44:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000076s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002479s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002889s ]
+
+[ 2016-03-08T21:08:02+08:00 ] 127.0.0.1 /index.php/Index/index/t/default.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001804s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002983s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000945s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024159s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003246s ]
+
+[ 2016-03-08T21:09:30+08:00 ] 127.0.0.1 /index.php/Index/index/t/default.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003233s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000938s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003168s ]
+
+[ 2016-03-08T21:09:37+08:00 ] 127.0.0.1 /index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003052s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000629s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001972s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002946s ]
+
+[ 2016-03-08T21:09:41+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003124s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000829s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002872s ]
+
+[ 2016-03-08T21:09:50+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002937s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000650s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002916s ]
+
+[ 2016-03-08T21:11:37+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003089s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000621s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003047s ]
+
+[ 2016-03-08T21:13:21+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000143s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002939s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001556s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001827s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003081s ]
+
+[ 2016-03-08T21:13:53+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003908s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000705s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003219s ]
+
+[ 2016-03-08T21:14:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003073s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000769s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001765s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002897s ]
+
+[ 2016-03-08T21:19:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002942s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0016s ]
+
+[ 2016-03-08T21:19:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002292s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0013s ]
+
+[ 2016-03-08T21:19:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003350s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0009s ]
+
+[ 2016-03-08T21:20:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003078s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0009s ]
+
+[ 2016-03-08T21:20:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003719s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0108s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0008s ]
+
+[ 2016-03-08T21:22:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003115s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0010s ]
+
+[ 2016-03-08T21:23:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0008s ]
+
+[ 2016-03-08T21:36:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003043s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000627s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.781382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.781715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.034574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.034989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035730s ]
+
+[ 2016-03-08T21:38:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002903s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0056s ]
+
+[ 2016-03-08T21:38:33+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003716s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0009s ]
+
+[ 2016-03-08T21:38:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004606s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0013s ]
+
+[ 2016-03-08T21:39:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001815s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003282s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000658s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029921s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008444s ]
+
+[ 2016-03-08T21:39:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003230s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0216s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000221s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+NOTIC: [8] Undefined variable: register D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001860s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003942s ]
+
+[ 2016-03-08T21:40:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000693s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+NOTIC: [8] Undefined variable: register D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003649s ]
+
+[ 2016-03-08T21:40:33+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003899s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003049s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000636s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+NOTIC: [8] Undefined variable: register D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022317s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002464s ]
+
+[ 2016-03-08T21:40:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000132s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002980s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003498s ]
+
+[ 2016-03-08T21:40:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003019s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000764s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+NOTIC: [8] Undefined variable: register D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004092s ]
+
+[ 2016-03-08T21:41:44+08:00 ] 127.0.0.1 /index.php/Index/registerUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002431s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002819s ]
+
+[ 2016-03-08T21:43:03+08:00 ] 127.0.0.1 /index.php/Index/registerUser
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003538s ]
+
+[ 2016-03-08T21:43:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003088s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000736s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+NOTIC: [8] Undefined variable: register D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002887s ]
+
+[ 2016-03-08T21:43:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003732s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000627s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+NOTIC: [8] Undefined variable: register D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002910s ]
+
+[ 2016-03-08T21:44:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003056s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+NOTIC: [8] Undefined variable: register D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 9 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002470s ]
+
+[ 2016-03-08T21:45:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003053s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000632s ]
+NOTIC: [8] Undefined variable: back D:\wamp\www\My\Application\Runtime\Cache\Register\95750e03474530f6f4ad434ef3a113a6.php 第 8 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030079s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003392s ]
+
+[ 2016-03-08T21:46:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003725s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `nb_user`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002565s ]
+
+[ 2016-03-08T21:46:26+08:00 ] 127.0.0.1 /index.php/Index/registerUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003241s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003727s ]
+

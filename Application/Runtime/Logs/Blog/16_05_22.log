@@ -1,0 +1,1326 @@
+[ 2016-05-22T16:37:44+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-05-22T16:42:50+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.152009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:44:15+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:44:28+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:44:42+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0210s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:45:13+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-22T16:47:12+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:47:57+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:48:35+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:49:33+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.098006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2016-05-22T16:49:43+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:49:54+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T16:49:55+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-22T16:50:14+08:00 ] 127.0.0.1 /index.php/Blog/Index/readMore.shtml?artid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=6 AND username="Echo" )  [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:50:16+08:00 ] 127.0.0.1 /index.php/Blog/Index/edit.shtml?artid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid="6""Echo" )  [ RunTime:0.0340s ]
+ERR: 1146:Table 'noteblog.nb_cat' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `nb_cat`
+ERR: 1146:Table 'noteblog.nb_cat' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `nb_cat`
+
+[ 2016-05-22T16:50:31+08:00 ] 127.0.0.1 /index.php/Blog/Index/edit.shtml?artid=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid="6""Echo" )  [ RunTime:0.0000s ]
+ERR: 1146:Table 'noteblog.nb_cat' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `nb_cat`
+ERR: 1146:Table 'noteblog.nb_cat' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `nb_cat`
+
+[ 2016-05-22T16:51:18+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:51:37+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:52:06+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:52:17+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:52:46+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:52:51+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:53:05+08:00 ] 127.0.0.1 /index.php/Blog/Index/readMore.shtml?artid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=3 AND username="Echo" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:54:48+08:00 ] 127.0.0.1 /index.php/Blog/Index/readMore.shtml?artid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=3 AND username="Echo" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:54:56+08:00 ] 127.0.0.1 /index.php/Blog/Index/readMore.shtml?artid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=3 AND username="Echo" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T16:55:02+08:00 ] 127.0.0.1 /index.php/Blog/Index/readMore.shtml?artid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=3 AND username="Echo" )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:59:21+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:00:52+08:00 ] 127.0.0.1 /index.php/Blog/Index/readMore.shtml?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND username="Echo" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:01:18+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:01:53+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:03:58+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:04:45+08:00 ] 127.0.0.1 /index.php/Blog/Index/readMore.shtml?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND username="Echo" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:05:01+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-22T17:07:49+08:00 ] 127.0.0.1 /index.php/Blog/Index/readMore.shtml?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND username="Echo" )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Blog\1ef2d4d57a616643ff2c43c2de394463.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:09:34+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:13:43+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:15:15+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:15:40+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-22T17:15:57+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-22T17:16:13+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:16:36+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T17:16:48+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:17:17+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:17:54+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:18:07+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:18:17+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:18:35+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:18:53+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:25:19+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.003000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.149009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2016-05-22T17:25:22+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:25:47+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:26:08+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:26:56+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:27:35+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-22T17:28:02+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T17:30:57+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( username="Echo" and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="Echo"and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

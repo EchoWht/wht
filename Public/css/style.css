@@ -1,0 +1,61 @@
+/**/
+/*defaut*/
+.head-icon {
+    height: 29px;
+    border-radius: 50%;
+}
+.head-icon-home {
+    height: 20px;
+    border-radius: 50%;
+}
+
+#Blog .simple-art-body {
+    height: 150px;
+    text-overflow:ellipsis;
+    /*white-space:nowrap;*/
+    overflow:hidden;
+}
+#note a{
+    color: #00cc66;
+    font-size: 20px;
+    font-weight: 200;
+    width: 245px;
+    display: block;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+#note p{
+    height: 100px;
+    overflow: hidden;
+}
+#note span{
+    color: #c0c0c0;
+}
+.big-icon img{
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #f0fafb;
+    /*color: #FFFFFF;*/
+
+}
+/*头像上传*/
+.uploadIcon input[type=file],p{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.uploadIcon h2{
+    max-width: 540px;
+}
+.uploadIcon p{
+    max-width: 540px;
+}
+.uploadIcon .icon{
+    max-width: 540px;
+}
+.uploadIcon h2{
+    text-align: center;
+}
+.icon-btn{
+    max-width:100px
+}

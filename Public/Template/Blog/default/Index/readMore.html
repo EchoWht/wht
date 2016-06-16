@@ -1,0 +1,140 @@
+<include file="./Public/Template/lib/cssjs/head-blog-index.html" title='Blog-Blskye'/>
+<body>
+<div class="button-top" id="top-bt">
+    <a href="#about"><i class="fa fa-sort-desc fa-3x"></i></a>
+</div>
+<!-- NAVBAR Start -->
+<include file="./Public/Template/lib/nav/nav-blog.html"/>
+<!-- NAVBAR END -->
+<!--add by wht-->
+<!-- Page Content -->
+<div class="container black-link-content">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header">{$myblog[0][arttitle]}
+            
+            </h3>
+          
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Content Row -->
+    <div class="row">
+
+        <!-- Blog Post Content Column -->
+        <div class="col-lg-12">
+
+            <!-- Blog Post -->
+			<ul class="list-inline" style="color: #c0c0c0">
+				<li>
+					<img style="width: 16px;border-radius: 50%;line-height:50px" alt="{$vo.username}"
+					src="/Public/images/icon/{$myblog[0][username]}.jpg"
+					onerror="this.src='/Public/images/icon/default.jpg'"/>
+					<a href="{:U('User/Index/index')}?u={$vo.username}">{$myblog[0][username]}</a>
+				</li>
+				<li>
+					<span class="fa fa-tag"></span> <span>{$myblog[0][artremark1]}</span>
+				</li>
+				<li>
+					<span class="fa fa-clock-o"></span>{$myblog[0][artdate]}	
+				</li>
+			</ul>	
+			<hr>
+            
+                <p>
+                    {$myblog[0][artcontent]}
+                </p>
+            <a  class="btn btn-success"  href="{:U('/Blog/Index/edit')}?artid={$myblog[0][artid]}">修改</a>
+            <a  class="btn btn-success"  href="javascript:void(0);" onclick="deleteBlog({$myblog[0][artid]})">删除</a>
+            <hr>
+
+            <!-- Blog Comments -->
+
+            <!-- Comments Form -->
+            <div class="well">
+                <h4>评论:</h4>
+
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3">暂未开放！</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <hr>
+
+
+            <!-- Posted Comments -->
+
+            <!-- Comment -->
+            <!--<div class="media">-->
+                <!--<a class="pull-left" href="#">-->
+                    <!--<img class="media-object" src="http://placehold.it/64x64" alt="">-->
+                <!--</a>-->
+
+                <!--<div class="media-body">-->
+                    <!--<h4 class="media-heading">Start Bootstrap-->
+                        <!--<small>August 25, 2014 at 9:30 PM</small>-->
+                    <!--</h4>-->
+                    <!--Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.-->
+                    <!--Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi-->
+                    <!--vulputate fringilla. Donec lacinia congue felis in faucibus.-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!-- Comment -->
+            <!--<div class="media">-->
+                <!--<a class="pull-left" href="#">-->
+                    <!--<img class="media-object" src="http://placehold.it/64x64" alt="">-->
+                <!--</a>-->
+
+                <!--<div class="media-body">-->
+                    <!--<h4 class="media-heading">Start Bootstrap-->
+                        <!--<small>August 25, 2014 at 9:30 PM</small>-->
+                    <!--</h4>-->
+                    <!--Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.-->
+                    <!--Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi-->
+                    <!--vulputate fringilla. Donec lacinia congue felis in faucibus.-->
+                    <!--&lt;!&ndash; Nested Comment &ndash;&gt;-->
+                    <!--<div class="media">-->
+                        <!--<a class="pull-left" href="#">-->
+                            <!--<img class="media-object" src="http://placehold.it/64x64" alt="">-->
+                        <!--</a>-->
+
+                        <!--<div class="media-body">-->
+                            <!--<h4 class="media-heading">Nested Start Bootstrap-->
+                                <!--<small>August 25, 2014 at 9:30 PM</small>-->
+                            <!--</h4>-->
+                            <!--Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin-->
+                            <!--commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce-->
+                            <!--condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; End Nested Comment &ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+
+        </div>
+
+        <!-- Blog Sidebar Widgets Column 
+        -->
+
+    </div>
+    <!-- /.row -->
+
+    <hr>
+</div>
+
+<include file="./Public/Template/lib/tip.html"/>
+
+<include file="./Public/Template/lib/ot/copyright.html"/>
+
+
+<!-- JAVASCRIPT
+================================================== -->
+
+<include file="./Public/Template/lib/cssjs/foot-blog-add.html"/></html>

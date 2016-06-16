@@ -1,0 +1,86 @@
+<include file="./Public/Template/lib/cssjs/head-blog-add.html" title='设置code样式-Blskye'/>
+<body>
+<div class="button-top" id="top-bt">
+    <a href="#about"><i class="fa fa-sort-desc fa-3x"></i></a>
+</div>
+<!-- NAVBAR Start -->
+<include file="./Public/Template/lib/nav/nav-blog.html"/>
+
+
+<!-- NAVBAR END -->
+<!--add by wht-->
+<!-- Page Content -->
+<div class="container black-link-content">
+    <div class="row">
+        <div class="col-lg-12">
+
+
+
+                <h3 class="page-header">
+                    选择你喜欢的代码样式
+                </h3>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">User</a>
+                    </li>
+                    <li class="active">设置code样式</li>
+                </ol>
+
+
+        </div>
+    </div>
+    <!-- Content Row -->
+    <div class="row">
+        <!-- Sidebar Column -->
+        <div class="col-md-3">
+            <div class="list-group" style="height: 600px;overflow:auto;">
+                <input type="hidden" id="tocodestyle" name="tocodestyle" value="">
+                <input type="hidden" id="actionurl"  value="/index.php/User/Set/setstyle">
+
+                <volist name="codestyle" id="vo">
+                    <a href="javascript:void (0)" onclick="changeCodeStyle(this.id)" id="{$vo.name}"  class="list-group-item">{$vo.name}</a>
+                </volist>
+
+
+            <script>
+
+            </script>
+            </div>
+        </div>
+        <!-- Content Column -->
+        <div class="col-md-9">
+            <h2>css</h2>
+
+            <pre><code class="css hljs">@<span class="hljs-keyword">font-face</span> {
+                <span class="hljs-attribute">font-family</span>: Chunkfive; <span class="hljs-attribute">src</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'Chunkfive.otf'</span>);
+                }
+
+                <span class="hljs-selector-tag">body</span>, <span class="hljs-selector-class">.usertext</span> {
+                <span class="hljs-attribute">color</span>: <span class="hljs-number">#F0F0F0</span>; <span class="hljs-attribute">background</span>: <span class="hljs-number">#600</span>;
+                <span class="hljs-attribute">font-family</span>: Chunkfive, sans;
+                }
+
+                @<span class="hljs-keyword">import</span> url(print.css);
+                @<span class="hljs-keyword">media</span> print {
+                <span class="hljs-selector-tag">a</span><span class="hljs-selector-attr">[href^=http]</span><span class="hljs-selector-pseudo">::after</span> {
+                <span class="hljs-attribute">content</span>: <span class="hljs-built_in">attr</span>(href)
+                }
+                }
+            </code></pre>
+            <div id="data-info"></div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+
+</div>
+
+<include file="./Public/Template/lib/tip.html"/>
+
+
+<include file="./Public/Template/lib/ot/copyright.html"/>
+
+
+<!-- JAVASCRIPT
+================================================== -->
+
+<include file="./Public/Template/lib/cssjs/foot-blog-add.html"/>

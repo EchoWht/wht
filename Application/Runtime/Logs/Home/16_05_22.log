@@ -1,0 +1,514 @@
+[ 2016-05-22T16:37:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.9701s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` LIMIT 1   [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.2670s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.1260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` LIMIT 1   [ RunTime:0.0310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.388022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.388022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.021001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022001s ]
+SQL: SHOW COLUMNS FROM `nb_visitorlog` [ RunTime:0.5800s ]
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\wamp\www\wht\Application\Common\Common\function.php 第 29 行.
+SQL: INSERT INTO `nb_visitorlog` (`username`,`pagename`,`pageurl`,`visittime`,`userstate`,`userip`) VALUES ('v','Home','http://blskye.dev:80/','2016-05-22 16:37:20','0','127.0.0.1') [ RunTime:0.6780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.062004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.063004s ]
+
+[ 2016-05-22T16:37:24+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_blog.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0350s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-12%" ) LIMIT 1   [ RunTime:0.1270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-04%" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T16:37:24+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_user.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-12%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-01%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-02%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-03%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-04%" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-22T16:37:25+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_note.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-04%" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-22T16:37:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_visitorlog` [ RunTime:0.0050s ]
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\wamp\www\wht\Application\Common\Common\function.php 第 29 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' D:\wamp\www\wht\Application\Common\Common\function.php 第 33 行.
+SQL: INSERT INTO `nb_visitorlog` (`username`,`pagename`,`pageurl`,`visittime`,`userstate`,`userip`) VALUES ('Echo','Home','http://blskye.dev:80/','2016-05-22 16:37:40','1','127.0.0.1') [ RunTime:0.0620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-22T16:37:40+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_note.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-04%" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2016-05-22T16:37:40+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_blog.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-04%" ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:37:40+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_user.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-12%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-01%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-02%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-03%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-04%" ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T16:37:45+08:00 ] 127.0.0.1 /index.php/Home/Blog/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-22T16:38:13+08:00 ] 127.0.0.1 /index.php/Home/Blog/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-05-22T16:39:00+08:00 ] 127.0.0.1 /index.php/Home/Blog/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:39:05+08:00 ] 127.0.0.1 /index.php/Home/Blog/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:52:47+08:00 ] 127.0.0.1 /index.php/Home/Blog/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:55:10+08:00 ] 127.0.0.1 /index.php/Home/Blog/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( ispublic=1 and (arttitle like "%%" or artcontent like "%%") ) ORDER BY artid desc LIMIT 0,4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:55:13+08:00 ] 127.0.0.1 /index.php/Home/Blog/readMore.shtml/?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:1.1191s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND ispublic=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 168 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 175 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 192 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 193 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 197 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 199 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 199 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.108006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-22T16:55:29+08:00 ] 127.0.0.1 /index.php/Home/Blog/readMore.shtml/?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND ispublic=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 168 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 175 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 192 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 195 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 198 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-22T16:55:35+08:00 ] 127.0.0.1 /index.php/Home/Blog/readMore.shtml/?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND ispublic=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 200 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-22T16:55:35+08:00 ] 127.0.0.1 /index.php/Home/Blog/readMore.shtml/?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND ispublic=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 194 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 197 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 200 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 202 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 203 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T16:56:24+08:00 ] 127.0.0.1 /index.php/Home/Blog/readMore.shtml/?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND ispublic=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 177 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 192 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 195 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 198 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:57:26+08:00 ] 127.0.0.1 /index.php/Home/Blog/readMore.shtml/?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND ispublic=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 177 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 194 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 195 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 199 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 201 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 201 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T16:57:39+08:00 ] 127.0.0.1 /index.php/Home/Blog/readMore.shtml/?artid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid=7 AND ispublic=1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 168 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 169 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 177 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 193 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 194 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 198 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 200 行.
+NOTIC: [8] Use of undefined constant artid - assumed 'artid' D:\wamp\www\wht\Application\Runtime\Cache\Home\78cbfa8ddfa640cc95a3db6b5af6f5e0.php 第 201 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

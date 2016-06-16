@@ -1,0 +1,44 @@
+[ 2016-03-24T22:34:20+08:00 ] 127.0.0.1 /login.php/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000668s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.084365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.084747s ]
+
+[ 2016-03-24T22:34:27+08:00 ] 127.0.0.1 /login.php/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001700s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.2738s ]
+SQL: SELECT `username` FROM `nb_user` WHERE ( username="wang" ) LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="wang" AND passwd="e08392bb89dedb8ed6fb298f8e729c15" ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `nb_user` SET `username`='wang',`passwd`='e08392bb89dedb8ed6fb298f8e729c15',`email`='wang',`nickname`=NULL,`permission`='0',`registertime`='2016-03-09 08:07:10',`lastlogintime`='2016-03-24 10:34:27',`useronline`='0' WHERE ( username="wang" ) [ RunTime:0.0237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000355s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000738s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002723s ]
+

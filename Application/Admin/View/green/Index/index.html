@@ -1,0 +1,9 @@
+<h1 style="color: #008000;">Green</h1> 
+<include file="Public/navbar"/>
+<p>{$name}</p>
+<a href="{:U('index',array('t'=>'default'))}">Default</a>
+<a href="{:U('index',array('t'=>'green'))}">Green</a>
+<p>{$mobile|default="木有啊"}</p>
+<p>项目目录：{$Think.server.DOCUMENT_ROOT}</p>
+
+<include file="green/Public/navbar"/>

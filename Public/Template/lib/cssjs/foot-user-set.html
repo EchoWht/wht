@@ -1,0 +1,82 @@
+<!-- JAVASCRIPT
+================================================== -->
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script type="text/javascript" src="/Public/bootstrap/js/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- CUSTOM JAVASCRIPT -->
+<!-- Custom Functions -->
+<script type="text/javascript" src="/Public/home/style_one/js/functions.js"></script>
+
+<!-- Portfolio with mixitup filter and prettyphoto -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.mixitup.min.js"></script>
+<!-- Magnific Popup core JS file -->
+<script type="text/javascript" src="/Public/home/style_one/js/magnific.js"></script>
+
+<!-- BxSlider -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.bxslider.min.js"></script>
+
+<!-- Sequence Slider -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.sequence-min.js"></script>
+
+<!-- Parallax Background -->
+<script type="text/javascript" src="/Public/home/style_one/js/nbw-parallax.js"></script>
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.inview.js"></script>
+
+<!-- Smooth Scrolling -->
+<script type="text/javascript" src="/Public/home/style_one/js/smoothscroll.js"></script>
+
+<!-- Sticky Navigation -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.sticky.js"></script>
+
+<!-- Style Switcher -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.style-switcher.js"></script>
+
+<!-- Clients Slider -->
+<script type="text/javascript" src="/Public/home/style_one/js/jquery.flexisel.js"></script>
+
+<!-- Retina JS -->
+<script type="text/javascript" src="/Public/home/style_one/js/retina-1.1.0.min.js"></script>
+<script src="/Public/bootstrapvalidator/js/bootstrapValidator.js"></script>
+<script src="/Public/js/func.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#addcat').bootstrapValidator({
+            message: 'This value is not valid',
+            //live: 'disabled',
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+
+            fields: {
+                catname: {
+                    message: 'The catname is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: '分类名不能空着哟(¬д¬。) '
+                        },
+                        stringLength: {
+                            min: 1,
+                            max: 30,
+                            message: '不能超过30位(¬д¬。) '
+                        },
+
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_\.]+$/,
+                            message: '分类名不要带特殊字符(¬д¬。) '
+                        }
+                    }
+                }
+            }
+        });
+    });
+
+
+</script>
+
+
+</body>
+</html>

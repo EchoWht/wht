@@ -1,0 +1,59 @@
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation" id="menu">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<a href="http://www.blskye.com"><img src="/Public/images/logo-z-100.png" class="logo"></a>-->
+            <a class="navbar-brand" href="http://www.blskye.com">
+                Blskye
+            </a>
+        </div>
+
+        <!-- MENU LINKS -->
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="navigation">
+                <li><a href="{:U('/Note/Index/index')}">Note</a></li>
+                <li><a href="{:U('/Blog/Index/index')}">Blog</a></li>
+
+                <!--<li class="dropdown">-->
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"-->
+                <!--aria-expanded="false">下载 <span class="caret"></span></a>-->
+                <!--<ul class="dropdown-menu">-->
+                <!--<li><a href="#notechajian">Note插件</a></li>-->
+                <!--</ul>-->
+                <!--</li>-->
+            </ul>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+
+                    <empty name="name">
+                        <li><a href="{:U('/Login/Index/index')}">登录</a></li>
+                        <li><a href="{:U('/Register/Index/index')}">注册</a></li>
+                        <else/>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                <img class="head-icon-home" alt="{$name}" src="/Public/images/icon/{$name}.jpg"
+                                     onerror="this.src='/Public/images/icon/default.jpg'"/>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="fa fa-home"><span>&nbsp;&nbsp;我的主页</span></i></a></li>
+                                <li><a href="{:U('/User/Set/setcat')}"><i class="fa fa-cogs"><span>&nbsp;&nbsp;帐号设置</span></i></a></li>
+                                <!--<li><a href="#">Something else here</a></li>-->
+                                <li role="separator" class="divider"></li>
+                                <!--<li class="dropdown-header">Nav header</li>-->
+                                <li><a href="#"><i class="fa fa-power-off"><span>&nbsp;&nbsp;退出登录</span></i></a></li>
+                                <!--<li><a href="#">One more separated link</a></li>-->
+                            </ul>
+                        </li>
+                    </empty>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

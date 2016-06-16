@@ -1,0 +1,33 @@
+[ 2016-03-30T22:42:55+08:00 ] 127.0.0.1 /index.php/User/Index/index.shtml?u=wang
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `nb_user` WHERE ( username="wang" )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="wang" ) LIMIT 9   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="wang" ) LIMIT 9   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000731s ]
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\MyBeta\Application\Runtime\Cache\User\17556959e3df1da0af4158c42160c231.php 第 13 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\MyBeta\Application\Runtime\Cache\User\17556959e3df1da0af4158c42160c231.php 第 40 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\MyBeta\Application\Runtime\Cache\User\17556959e3df1da0af4158c42160c231.php 第 40 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\MyBeta\Application\Runtime\Cache\User\17556959e3df1da0af4158c42160c231.php 第 43 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\MyBeta\Application\Runtime\Cache\User\17556959e3df1da0af4158c42160c231.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\MyBeta\Application\Runtime\Cache\User\17556959e3df1da0af4158c42160c231.php 第 67 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\MyBeta\Application\Runtime\Cache\User\17556959e3df1da0af4158c42160c231.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002413s ]
+

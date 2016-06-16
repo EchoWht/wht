@@ -1,0 +1,63 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: #CCCC99;
+}
+
+
+/*nav*/
+nav ul li{
+    display: inline;
+
+}
+nav{
+    background: #1fad83;
+    height: 50px;
+    line-height: 50px;
+    padding:0px 50px;
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+}
+nav a{
+    color: #FFFFFF;
+    background: #ff0000;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+nav .ico a{
+    background: none;
+    border-radius: 50%;
+}
+nav .ico img{
+    width: 30px;
+   position: relative;
+    top:8px;
+}
+.default-nav-right{
+    float: left;
+    position: relative;
+    top: -50px;
+}
+.default-nav-right{
+    float: right;
+}
+
+/*主体*/
+article{
+    padding: 50px;
+}
+.simple-art {
+    border: 1px solid #dbc59e;
+    padding: 10px;
+    margin-top: 20px;
+    background: #fff;
+}
+.simple-art-head h2{
+    margin: 10px 0px;
+}
+.simple-art-body{
+    padding: 20px;
+}

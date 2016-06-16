@@ -1,0 +1,510 @@
+[ 2016-04-20T20:26:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000080s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002439s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0117s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000722s ]
+NOTIC: [8] Undefined variable: countBlog D:\wamp\www\wht\Application\Runtime\Cache\Home\e19d7803741c3026e7149b7dd2acfde5.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008397s ]
+
+[ 2016-04-20T20:26:16+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_note.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002572s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003985s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004441s ]
+
+[ 2016-04-20T20:26:16+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_user.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004931s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-11%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-12%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-01%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-02%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-03%" ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003389s ]
+
+[ 2016-04-20T20:26:17+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_blog.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002291s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0197s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004286s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004694s ]
+
+[ 2016-04-20T21:26:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002539s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+NOTIC: [8] Undefined variable: countBlog D:\wamp\www\wht\Application\Runtime\Cache\Home\e19d7803741c3026e7149b7dd2acfde5.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002135s ]
+
+[ 2016-04-20T21:26:17+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_blog.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002715s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0116s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005571s ]
+
+[ 2016-04-20T21:26:17+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_user.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002553s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-11%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-12%" ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-01%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-02%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-03%" ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003428s ]
+
+[ 2016-04-20T21:26:18+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_note.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003210s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002997s ]
+
+[ 2016-04-20T21:26:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003965s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0117s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000440s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000995s ]
+NOTIC: [8] Undefined variable: countBlog D:\wamp\www\wht\Application\Runtime\Cache\Home\e19d7803741c3026e7149b7dd2acfde5.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001892s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002943s ]
+
+[ 2016-04-20T21:26:47+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_user.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003496s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-11%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-12%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-01%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-02%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-03%" ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003114s ]
+
+[ 2016-04-20T21:26:48+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_note.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003347s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0115s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002873s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003542s ]
+
+[ 2016-04-20T21:26:48+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_blog.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003442s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005144s ]
+
+[ 2016-04-20T21:29:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002247s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0111s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Undefined variable: countBlog D:\wamp\www\wht\Application\Runtime\Cache\Home\e19d7803741c3026e7149b7dd2acfde5.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002764s ]
+
+[ 2016-04-20T21:29:46+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_user.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005405s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-11%" ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-12%" ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-01%" ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-02%" ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-03%" ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003528s ]
+
+[ 2016-04-20T21:29:46+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_blog.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003789s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002073s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002389s ]
+
+[ 2016-04-20T21:29:46+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_note.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003471s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002449s ]
+
+[ 2016-04-20T21:48:33+08:00 ] 127.0.0.1 /index.php/Home/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000352s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000755s ]
+NOTIC: [8] Undefined variable: countBlog D:\wamp\www\wht\Application\Runtime\Cache\Home\e19d7803741c3026e7149b7dd2acfde5.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002012s ]
+
+[ 2016-04-20T21:48:33+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_note.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002882s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003603s ]
+
+[ 2016-04-20T21:48:34+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_user.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003405s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-11%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-12%" ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-01%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-02%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-03%" ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002537s ]
+
+[ 2016-04-20T21:48:34+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_blog.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003365s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002172s ]
+
+[ 2016-04-20T22:11:21+08:00 ] 127.0.0.1 /index.php/Home/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003727s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000735s ]
+NOTIC: [8] Undefined variable: countBlog D:\wamp\www\wht\Application\Runtime\Cache\Home\e19d7803741c3026e7149b7dd2acfde5.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045719s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003761s ]
+
+[ 2016-04-20T22:11:22+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_blog.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003113s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_blog` WHERE ( artdate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003449s ]
+
+[ 2016-04-20T22:11:22+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_note.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003859s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-11%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2015-12%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-01%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-02%" ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( notedate like "%2016-03%" ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003211s ]
+
+[ 2016-04-20T22:11:22+08:00 ] 127.0.0.1 /index.php/Home/Image/graph_user.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002367s ]
+SQL: SHOW COLUMNS FROM `nb_user` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-11%" ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2015-12%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-01%" ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-02%" ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_user` WHERE ( registertime like "%2016-03%" ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002494s ]
+
+[ 2016-04-20T22:11:23+08:00 ] 127.0.0.1 /index.php/Home/Index/download.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000201s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002988s ]
+ERR: 非法操作:download
+
+[ 2016-04-20T22:13:05+08:00 ] 127.0.0.1 /index.php/Home/Index/download.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003550s ]
+
+[ 2016-04-20T22:13:31+08:00 ] 127.0.0.1 /index.php/Home/Index/download.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004300s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004748s ]
+
+[ 2016-04-20T22:13:42+08:00 ] 127.0.0.1 /index.php/Home/Index/download.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002967s ]
+

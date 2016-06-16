@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="/Public/css/default/style.css"/>
+    <link rel="stylesheet" href="/Public/highlight/styles/zenburn.css">
+    <!--阅读显示页面样式-->
+    <script src="/Public/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<include file="./Public/Template/lib/default/nav.html"/>
+<article>
+    <div>
+        <a href="{$add}">写Blog</a>
+    </div>
+    <volist name="myblog" id="vo">
+        <div class="simple-art">
+            <div class="simple-art-head">
+                <h2>{$vo.arttitle}</h2>
+                <h5>{$vo.username} <em>{$vo.artdate}</em></h5>
+                <hr/>
+            </div>
+           <div class="simple-art-body">
+               <p>
+                   {$vo.artcontent}
+               </p>
+           </div>
+            <hr/>
+            <div class="simple-art-foot">
+                <a href="{$readmore}?artid={$vo.artid}">阅读更多</a>
+            </div>
+        </div>
+    </volist>
+
+</article>
+</body>
+</html>

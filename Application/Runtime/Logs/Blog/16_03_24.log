@@ -1,0 +1,81 @@
+[ 2016-03-24T22:34:34+08:00 ] 127.0.0.1 /index.php/Blog/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003314s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0432s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( username="wang" )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000384s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000855s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001715s ]
+
+[ 2016-03-24T22:34:41+08:00 ] 127.0.0.1 /index.php/Blog/Index/readMore.html?artid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002032s ]
+SQL: SHOW COLUMNS FROM `nb_blog` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `nb_blog` WHERE ( artid="1""wang" )  [ RunTime:0.0192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Undefined variable: name D:\wamp\www\MyBeta\Application\Runtime\Cache\Blog\9ea4accd82b107f008534de61139490a.php 第 21 行.
+NOTIC: [8] Use of undefined constant arttitle - assumed 'arttitle' D:\wamp\www\MyBeta\Application\Runtime\Cache\Blog\9ea4accd82b107f008534de61139490a.php 第 24 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp\www\MyBeta\Application\Runtime\Cache\Blog\9ea4accd82b107f008534de61139490a.php 第 25 行.
+NOTIC: [8] Use of undefined constant artdate - assumed 'artdate' D:\wamp\www\MyBeta\Application\Runtime\Cache\Blog\9ea4accd82b107f008534de61139490a.php 第 25 行.
+NOTIC: [8] Use of undefined constant artcontent - assumed 'artcontent' D:\wamp\www\MyBeta\Application\Runtime\Cache\Blog\9ea4accd82b107f008534de61139490a.php 第 28 行.
+NOTIC: [8] Use of undefined constant artremark1 - assumed 'artremark1' D:\wamp\www\MyBeta\Application\Runtime\Cache\Blog\9ea4accd82b107f008534de61139490a.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001828s ]
+
+[ 2016-03-24T22:34:52+08:00 ] 127.0.0.1 /index.php/Blog/Index/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000595s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002861s ]
+
+[ 2016-03-24T22:35:15+08:00 ] 127.0.0.1 /index.php/Blog/Index/addBlog.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
+
