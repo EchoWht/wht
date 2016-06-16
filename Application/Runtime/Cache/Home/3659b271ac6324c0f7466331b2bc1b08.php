@@ -189,7 +189,7 @@
 									<img style="width: 16px;border-radius: 50%;line-height:50px" alt="<?php echo ($vo["username"]); ?>"
 									src="/Public/images/icon/<?php echo ($vo["username"]); ?>.jpg"
 									onerror="this.src='/Public/images/icon/default.jpg'"/>
-									<a href="<?php echo U('User/Index/index');?>"><?php echo ($vo["username"]); ?></a>
+									<a href="<?php echo U('User/Index/index');?>?u=<?php echo ($vo["username"]); ?>"><?php echo ($vo["username"]); ?></a>
 								</li>
 								<li>
 									<span class="fa fa-tag"></span> <span><?php echo ($vo["artremark1"]); ?></span>

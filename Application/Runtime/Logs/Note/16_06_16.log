@@ -1,0 +1,225 @@
+[ 2016-06-16T12:49:38+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.083005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.038002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039002s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:1.7761s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) LIMIT 1   [ RunTime:0.7900s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) ORDER BY noteid desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nb_cat` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `nb_cat` WHERE ( username="Echo" )  [ RunTime:0.0100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.013001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.014001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.797045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.797045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.120007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.121007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.079005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.080005s ]
+
+[ 2016-06-16T12:49:39+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.090006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.037002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0680s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) ORDER BY noteid desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nb_cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `nb_cat` WHERE ( username="Echo" )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-16T12:49:39+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.089005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.040002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041002s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) ORDER BY noteid desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nb_cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_cat` WHERE ( username="Echo" )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-16T12:49:39+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.082005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.041002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041002s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) ORDER BY noteid desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nb_cat` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nb_cat` WHERE ( username="Echo" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-16T14:14:39+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) ORDER BY noteid desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nb_cat` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `nb_cat` WHERE ( username="Echo" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.023002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2016-06-16T14:14:42+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) ORDER BY noteid desc LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nb_cat` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nb_cat` WHERE ( username="Echo" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-16T14:14:46+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) ORDER BY noteid desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nb_cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_cat` WHERE ( username="Echo" )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-16T15:10:39+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.5750s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) LIMIT 1   [ RunTime:0.1750s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) ORDER BY noteid desc LIMIT 0,12   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nb_cat` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `nb_cat` WHERE ( username="Echo" )  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.145008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.035002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.035002s ]
+
+[ 2016-06-16T16:50:07+08:00 ] 127.0.0.1 /index.php/Note/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `nb_note` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nb_note` WHERE ( username="Echo"and notetitle like "%%" and noteremark1 like "%%" ) ORDER BY noteid desc LIMIT 0,12   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `nb_cat` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nb_cat` WHERE ( username="Echo" )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -17,7 +17,7 @@
 
     <!-- bootstrap css -->
     <link href="/Public/home/style_one/css/bootstrap.css" rel="stylesheet">
-
+    <!--<link href="/Public/bootstrap/css/bootstrap.min.css">-->
     <!-- custom css -->
     <!--link href="/Public/home/style_one/css/custom.css" rel="stylesheet"-->
 
@@ -163,9 +163,8 @@
             <form id="addblog" method="post" action="<?php echo U('index/addBlog');?>">
                 <input type="hidden" name="artid" value="<?php echo ($myblog[0][artid]); ?>">
 
-                <h5 class="page-header">
+                <h5 class="page-header-input">
                     <input  class="form-control"  type="text" name="arttitle" id="arttitle" placeholder="在此填写标题">
-                   
                 </h5>
                 <!--<ol class="breadcrumb">-->
                 <!--<li><a href="index.html">Home</a>-->
@@ -179,55 +178,43 @@
     </div>
     <!-- Content Row -->
     <div class="row">
-
         <!-- Blog Post Content Column -->
         <div class="col-lg-12">
-
-            <!-- Blog Post -->
-
-
-            <!-- Date/Time -->
-            <!--<p><i class="fa fa-clock-o"></i> 发表时间： <?php echo ($myblog[0][artdate]); ?></p>-->
-
-            <!--<hr>-->
+            <ul class="list-inline">
+                <li>
+                    分类： <select name="classification" id="classification">
+                    <?php if(is_array($catlist)): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "暂时没有数据" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option>
+                            <?php echo ($vo["catname"]); ?>
+                        </option><?php endforeach; endif; else: echo "暂时没有数据" ;endif; ?>
+                </select>
+                </li>
+                <li>
+                    <a title="增加分类" href="<?php echo U('/User/Set/setcat');?>" target="_blank"><span class="glyphicon glyphicon-plus"></span></a>
+                </li>
+                <li>
+                    状态：
+                    <label class="radio-inline">
+                        公开<input type="radio" name="ispublic" checked value="1">
+                    </label>
+                    <label class="radio-inline">
+                        私有<input type="radio" name="ispublic" value="0">
+                    </label>
+                </li>
+                <li class="fr">
+                    <button class="onlyfont-btn dark-green" type="button" id="fabiao" onclick="sub_art()">
+                        <span class="glyphicon glyphicon-open"></span>
+                        发表
+                    </button>
+                </li>
+            </ul>
             <div>
-                分类： <select name="classification" id="classification">
-                <?php if(is_array($catlist)): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "暂时没有数据" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option>
-                        <?php echo ($vo["catname"]); ?>
-                    </option><?php endforeach; endif; else: echo "暂时没有数据" ;endif; ?>
-            </select>
-                <a href="<?php echo U('/User/Set/setcat');?>" target="_blank"><span class="glyphicon glyphicon-plus"></span></a>
-
-                <span>&nbsp;&nbsp;&nbsp;状态：</span>
-                <label class="radio-inline">
-                    公开<input type="radio" name="ispublic" checked value="1">
-                </label>
-                <label class="radio-inline">
-                    私有<input type="radio" name="ispublic" value="0">
-                </label>
-            </div>
-            <br>
-
-            <p>
                 <textarea rows="30" cols="50" name="artcontent"></textarea>
                 <script type="text/javascript">CKEDITOR.replace('artcontent');</script>
-            </p>
-            <button class="btn btn-success" type="button" id="fabiao" onclick="sub_art()">
-                发表
-            </button>
-            <hr>
+            </div>
+
+
             </form>
-            <!-- Blog Comments -->
-
-            <!-- Comments Form -->
-
         </div>
-
-        <!-- Blog Sidebar Widgets Column -->
-        <!--<div class="col-md-4">-->
-
-        <!--</div>-->
-
     </div>
     <!-- /.row -->
 

@@ -41,14 +41,23 @@
 				<li>
 					<span class="fa fa-clock-o"></span>{$myblog[0][artdate]}	
 				</li>
+
+                <li style="float: right">
+                    <a  title="删除" href="javascript:void(0);" onclick="deleteBlog({$myblog[0][artid]})">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </a>
+                </li>
+                <li  style="float: right">
+                    <a title="修改" href="{:U('/Blog/Index/edit')}?artid={$myblog[0][artid]}">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                </li>
 			</ul>	
 			<hr>
             
                 <p>
                     {$myblog[0][artcontent]}
                 </p>
-            <a  class="btn btn-success"  href="{:U('/Blog/Index/edit')}?artid={$myblog[0][artid]}">修改</a>
-            <a  class="btn btn-success"  href="javascript:void(0);" onclick="deleteBlog({$myblog[0][artid]})">删除</a>
             <hr>
 
             <!-- Blog Comments -->

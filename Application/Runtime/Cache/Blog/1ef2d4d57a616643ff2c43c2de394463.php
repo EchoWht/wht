@@ -193,14 +193,23 @@
 				<li>
 					<span class="fa fa-clock-o"></span><?php echo ($myblog[0][artdate]); ?>	
 				</li>
+
+                <li style="float: right">
+                    <a  title="删除" href="javascript:void(0);" onclick="deleteBlog(<?php echo ($myblog[0][artid]); ?>)">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </a>
+                </li>
+                <li  style="float: right">
+                    <a title="修改" href="<?php echo U('/Blog/Index/edit');?>?artid=<?php echo ($myblog[0][artid]); ?>">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                </li>
 			</ul>	
 			<hr>
             
                 <p>
                     <?php echo ($myblog[0][artcontent]); ?>
                 </p>
-            <a  class="btn btn-success"  href="<?php echo U('/Blog/Index/edit');?>?artid=<?php echo ($myblog[0][artid]); ?>">修改</a>
-            <a  class="btn btn-success"  href="javascript:void(0);" onclick="deleteBlog(<?php echo ($myblog[0][artid]); ?>)">删除</a>
             <hr>
 
             <!-- Blog Comments -->

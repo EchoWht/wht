@@ -17,7 +17,7 @@
 
     <!-- bootstrap css -->
     <link href="/Public/home/style_one/css/bootstrap.css" rel="stylesheet">
-
+    <!--<link href="/Public/bootstrap/css/bootstrap.min.css">-->
     <!-- custom css -->
     <!--link href="/Public/home/style_one/css/custom.css" rel="stylesheet"-->
 
@@ -161,53 +161,57 @@
             <form action="<?php echo U('/Blog/Index/updateBlog');?>" method="post">
                 <input type="hidden" name="artid" value="<?php echo ($myblog[0][artid]); ?>">
 
-                <h4 class="page-header"><input type="text" class="form-control" name="arttitle" value="<?php echo ($myblog[0][arttitle]); ?>">
+                <h4 class="page-header-input"><input type="text" class="form-control" name="arttitle" value="<?php echo ($myblog[0][arttitle]); ?>">
                 </h4>
 
         </div>
     </div>
     <!-- Content Row -->
     <div class="row">
-
         <!-- Blog Post Content Column -->
         <div class="col-lg-12">
-
-
-
-            <!-- Date/Time -->
-            <p><i class="fa fa-clock-o"></i> 发表时间： <?php echo ($myblog[0][artdate]); ?></p>
-
-            <hr>
-           分类： <select  name="classification" id="classification">
-                <option>
-                    <?php echo ($myblog[0][artremark1]); ?>
-                </option>
-                <?php if(is_array($catlist)): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option>
-                        <?php echo ($vo["catname"]); ?>
-                    </option><?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-            <span>&nbsp;&nbsp;&nbsp;状态：</span>
-            <?php if(($myblog[0][ispublic] == 1 )): ?><label class="radio-inline">
-                    公开<input type="radio" name="ispublic" checked value="1">
-                </label>
-                <label class="radio-inline">
-                    私有<input type="radio" name="ispublic" value="0">
-                </label>
-                <?php else: ?>
-                <label class="radio-inline">
-                    公开<input type="radio" name="ispublic"  value="1">
-                </label>
-                <label class="radio-inline">
-                    私有<input type="radio" name="ispublic" checked value="0">
-                </label><?php endif; ?>
-
+            <ul class="list-inline">
+                <li>
+                    分类： <select  name="classification" id="classification">
+                    <option>
+                        <?php echo ($myblog[0][artremark1]); ?>
+                    </option>
+                    <?php if(is_array($catlist)): $i = 0; $__LIST__ = $catlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option>
+                            <?php echo ($vo["catname"]); ?>
+                        </option><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </li>
+                <li>
+                    <span>状态：</span>
+                    <?php if(($myblog[0][ispublic] == 1 )): ?><label class="radio-inline">
+                            公开<input type="radio" name="ispublic" checked value="1">
+                        </label>
+                        <label class="radio-inline">
+                            私有<input type="radio" name="ispublic" value="0">
+                        </label>
+                        <?php else: ?>
+                        <label class="radio-inline">
+                            公开<input type="radio" name="ispublic"  value="1">
+                        </label>
+                        <label class="radio-inline">
+                            私有<input type="radio" name="ispublic" checked value="0">
+                        </label><?php endif; ?>
+                </li>
+                <li>
+                    <i class="fa fa-clock-o"></i> <?php echo ($myblog[0][artdate]); ?>
+                </li>
+                <li class="fr">
+                    <button type="submit"  class="onlyfont-btn dark-green" >
+                        <span class="glyphicon glyphicon-ok"></span>
+                        确定修改
+                    </button>
+                </li>
+            </ul>
             <br>
             <p>
                 <textarea rows="30" cols="50" name="artcontent"><?php echo ($myblog[0][artcontent]); ?></textarea>
                 <script type="text/javascript">CKEDITOR.replace('artcontent');</script>
             </p>
-             <button type="submit"  class="btn btn-success" >确定修改</button>
-            <hr>
             </form>
             <!-- Blog Comments -->
 
@@ -217,9 +221,6 @@
 
     </div>
     <!-- /.row -->
-
-    <hr>
-
 
 </div>
 

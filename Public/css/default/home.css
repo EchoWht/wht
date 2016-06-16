@@ -124,3 +124,17 @@ margin-top:0px}
 .card1{
     text-align: center;
 }
+.onlyfont-btn{
+    border:0px;
+    background: transparent;
+}
+.dark-green{
+    color: #2b542c;
+}
+.fr{
+    float: right;
+}
+.page-header-input {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+}
