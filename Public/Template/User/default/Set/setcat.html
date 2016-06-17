@@ -44,11 +44,20 @@
             <h2>我的分类</h2>
 
             <div>
-                <volist name="list" id="vo">
-                    <span class="cattree" id="span{$vo.id}">{$vo.catname}
-                        <button id="{$vo.id}" type="button" onclick="delcat(this.id)">&times;</button>
-                    </span>
-                </volist>
+                <ul class="treelist">
+                    <li class="root">
+                        <h4> 分类树</h4>
+                    </li>
+                    <volist name="list" id="vo">
+                        <li>
+                            <span class="cattree" id="span{$vo.id}">{$vo.catname}
+                                <button id="{$vo.id}" type="button" onclick="delcat(this.id)">&times;</button>
+                            </span>
+                        </li>
+                    </volist>
+                </ul>
+
+
                 <hr>
                 <span>
                     <form action="{:U('/User/Set/addcat')}" method="post">
