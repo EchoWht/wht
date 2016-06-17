@@ -1,6 +1,6 @@
+#缓存
 Runtime
-
-
+#phpstrom
 .idea
-
+#配置文件
 /ThinkPHP/Conf/convention.php
