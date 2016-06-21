@@ -968,9 +968,9 @@
 										'<a href="javascript:void(0)" target="_blank" onclick="return false;" id="' + previewLinkId + '">' +
 										'<img id="' + previewImageId + '" alt="" /></a>' +
 									// jscs:disable maximumLineLength
-										( editor.config.image_previewText) +
+										( editor.config.image_previewText) 
 									// jscs:enable maximumLineLength
-									'</td></tr></table></div></div>'
+
 							} ]
 						} ]
 					} ]
