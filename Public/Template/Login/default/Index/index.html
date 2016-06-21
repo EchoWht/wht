@@ -50,7 +50,7 @@
                         </div>
 
                     </div>
-                    <input type="text" name="referurl" value=""/>
+                    <input  type="hidden" name="referurl" value=""/>
                 </form>
                 <hr>
                 <div class="col-lg-3">
@@ -67,6 +67,8 @@
 
 <script type="text/javascript">
     var referurl = document.referrer;//上级网址
+    console.log("ref:"+referurl)
+    console.log("url:"+window.location.pathname);
     $("input[name=referurl]").val(referurl);
     var actionurl=document.getElementById("defaultForm").action;
     var usernameurl='http://'+window.location.host+'/index.php/Login/Index/isUser';
@@ -85,6 +87,7 @@
                 $.post(form.attr('action'), form.serialize(), function(result) {
                     if (result.valid == true || result.valid == 'true') {
                         // You can reload the current location
+                        
                         window.location.href=referurl;
                     } else  {
                         form.find('.alert').html('帐号或密码错误').show();

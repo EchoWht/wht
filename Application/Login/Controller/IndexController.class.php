@@ -67,5 +67,9 @@ class IndexController extends Controller {
 			'valid' => $valid,
 		));
 	}
+	public function signout(){
+		session_destroy();
+		$this->success('你已退出登录····',U('/'));
+	}
 
 }
