@@ -50,7 +50,7 @@
                         </div>
 
                     </div>
-
+                    <input type="text" name="referurl" value=""/>
                 </form>
                 <hr>
                 <div class="col-lg-3">
@@ -66,6 +66,8 @@
 </div>
 
 <script type="text/javascript">
+    var referurl = document.referrer;//上级网址
+    $("input[name=referurl]").val(referurl);
     var actionurl=document.getElementById("defaultForm").action;
     var usernameurl='http://'+window.location.host+'/index.php/Login/Index/isUser';
     var passwordurl='http://'+window.location.host+'/index.php/Login/Index/isPassword';
@@ -81,25 +83,11 @@
             },
             submitHandler: function(validator, form, submitButton) {
                 $.post(form.attr('action'), form.serialize(), function(result) {
-                    // The result is a JSON formatted by your back-end
-                    // I assume the format is as following:
-                    //  {
-                    //      valid: true,          // false if the account is not found
-                    //      username: 'Username', // null if the account is not found
-                    //  }
-//                    alert(result.valid);
                     if (result.valid == true || result.valid == 'true') {
                         // You can reload the current location
-                        window.location.href="http://"+window.location.host;
-
-                        // Or use Javascript to update your page, such as showing the account name
-                        // $('#welcome').html('Hello ' + result.username);
+                        window.location.href=referurl;
                     } else  {
-                        // The account is not found
-                        // Show the errors
                         form.find('.alert').html('帐号或密码错误').show();
-
-                        // Enable the submit buttons
                         $('#loginForm').bootstrapValidator('disableSubmitButtons', false);
                     }
                 }, 'json');
