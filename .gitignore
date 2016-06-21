@@ -4,3 +4,4 @@ Runtime
 .idea
 #配置文件
 /ThinkPHP/Conf/convention.php
+/uploads/*
