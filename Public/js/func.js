@@ -334,5 +334,4 @@ function delcat(id){
 function catkey(cat){
 	document.getElementById('catword').value=cat;
 	document.getElementById('catwordform').submit();
-
 }

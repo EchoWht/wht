@@ -1,54 +1,32 @@
 <div class="well">
     <form role="form" method="post" action="{:U('/Home/Comments/post_comments')}">
-        <input type="hidden" name="">
+        <input type="hidden" name="pageid" value="{$myblog[0][artid]}">
+        <input type="hidden" name="pagetype" value="blog">
+        <input type="hidden" id="comment_id" name="comment_id" value="">
+        <input type="hidden" id="tousername" name="tousername" value="">
         <div class="form-group">
-            <textarea name="comments" class="form-control" rows="3" placeholder="开始评论吧~"></textarea>
+            <textarea id="comments" name="comments" class="form-control" rows="3" placeholder="开始评论吧~"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">确定</button>
     </form>
 </div>
 <!--Comment-->
-<div class="media">
-    <a class="pull-left" href="#">
-        <img class="media-object" src="http://placehold.it/64x64" alt="">
-    </a>
-    <div class="media-body">
-        <h4 class="media-heading">Start Bootstrap
-            <small>August 25, 2014 at 9:30 PM</small>
-        </h4>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
-        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-        vulputate fringilla. Donec lacinia congue felis in faucibus.
-    </div>
-</div>
-
-<!--Comment-->
-<div class="media">
-    <a class="pull-left" href="#">
-        <img class="media-object" src="http://placehold.it/64x64" alt="">
-    </a>
-    <div class="media-body">
-        <h4 class="media-heading">Start Bootstrap
-            <small>August 25, 2014 at 9:30 PM</small>
-        </h4>
-        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
-        Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-        vulputate fringilla. Donec lacinia congue felis in faucibus.
-        <!-- Nested Comment -->
-        <div class="media">
-            <a class="pull-left" href="#">
-                <img class="media-object" src="http://placehold.it/64x64" alt="">
+<volist name="blog_comments" id="vo" empty="还没有评论~">
+    <div class="media">
+        <a class="pull-left" href="#">
+            <img style="width: 50px" class="media-object" alt="{$vo.username}" src="/Public/images/icon/{$vo.username}.jpg" onerror="this.src='/Public/images/icon/default.jpg'">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading"> {$vo.username}
+                <if condition="$vo.tousername neq null ">
+                    @{$vo.tousername}
+                </if>
+                <small> {$vo.commentstime}</small>
+            </h4>
+            {$vo.comments}
+            <a href="javascript:void (0)" onclick="rep('{$vo.id}','{$vo.username}')">
+                回复
             </a>
-
-            <div class="media-body">
-                <h4 class="media-heading">Nested Start Bootstrap
-                    <small>August 25, 2014 at 9:30 PM</small>
-                </h4>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-                commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
-                condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-            </div>
         </div>
-        <!-- End Nested Comment -->
     </div>
-</div>
+</volist>

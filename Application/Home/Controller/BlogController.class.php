@@ -54,6 +54,8 @@ class BlogController extends Controller
         mode_vistor_log($blog['artid'], 'blog');
         /*Í³¼Æ·ÃÎÊ*/
         $blog_vistor=get_vister_num($blog['artid'], 'blog');
+        $blog_comments=get_comments($blog["artid"], "blog");
+        $this->assign('blog_comments', $blog_comments);
         $this->assign('myblog', $myblog);
         $this->assign('blog_vistor', $blog_vistor);
         $this->display();

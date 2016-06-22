@@ -24,6 +24,7 @@ class CommentsController extends Controller
         $comment=array(
             'username'  =>  I('session.name'),
             'comment_id'  =>  I('post.comment_id',null),
+            'tousername'=>I('post.tousername',null),
             'commentstime'   =>  date("Y-m-d H:i:s"),
             'pageid'=>  $_POST['pageid'],
             'pagetype'=>  I('post.pagetype'),

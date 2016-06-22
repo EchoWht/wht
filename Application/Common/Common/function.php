@@ -77,6 +77,19 @@ function get_vister_num($pageid,$pagetype){
     return $count;
 }
 /**
+ * 获取评论
+ * @param  String $pagetype 类型
+ * @param Int $pageid 页面id
+ * @return array
+ */
+function get_comments($pageid,$pagetype){
+   $Comments=M('Comments');
+    $condition['pageid']=$pageid;
+    $condition['pagetype']=$pagetype;
+    $result=$Comments->where($condition)->select();
+    return $result;
+}
+/**
  * 获取当前月以及之前月份的年月
  * @param int $step 后退月数
  * @return array

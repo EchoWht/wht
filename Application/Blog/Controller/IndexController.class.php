@@ -68,8 +68,10 @@ class IndexController extends Controller
             $this->error('没有这篇文章！',U('/Blog/Index/'));
         }
         $blog_vistor=get_vister_num($blog['artid'], 'blog');
+        $blog_comments=get_comments($blog["artid"], "blog");
         $this->assign('myblog', $myblog);
         $this->assign('blog_vistor', $blog_vistor);
+        $this->assign('blog_comments', $blog_comments);
         $this->display();
     }
 
