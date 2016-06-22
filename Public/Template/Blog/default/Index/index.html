@@ -45,6 +45,11 @@
 								<li>
 									<span class="fa fa-clock-o"></span>{$vo.artdate}	
 								</li>
+                                <if condition="$vo.blog_vistor neq 0 ">
+                                    <li>
+                                        <span class="fa fa-eye"></span>&nbsp;{$vo.blog_vistor}
+                                    </li>
+                                </if>
 							</ul>
                         <div class="blog-content"> {$vo.artcontent}
                         </div>

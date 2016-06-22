@@ -44,17 +44,26 @@
                 <li>
                     <span class="fa fa-eye"></span>{$blog_vistor}
                 </li>
+                <if condition="($name eq $myblog[0][username])">
+                    <li style="float: right">
+                        <a  title="删除" href="javascript:void(0);" onclick="deleteBlog({$myblog[0][artid]})">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </a>
+                    </li>
+                    <li  style="float: right">
+                        <a title="修改" href="{:U('/Blog/Index/edit')}?artid={$myblog[0][artid]}">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </a>
+                    </li>
+                    <else />
+                </if>
+
 			</ul>	
             <hr>
                 <p>
                     {$myblog[0][artcontent]}
                 </p>
-            <if condition="($name eq $myblog[0][username])">
-                <a class="btn btn-success" href="{:U('/Blog/Index/edit')}?artid={$myblog[0][artid]}">修改</a>
-                <a class="btn btn-success" href="javascript:void(0);" onclick="deleteBlog({$myblog[0][artid]})">删除</a>
 
-                <else />
-            </if>
                       <hr>
 
             <!-- Blog Comments -->
