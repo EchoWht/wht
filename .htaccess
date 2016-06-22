@@ -1,9 +1,23 @@
-<IfModule mod_rewrite.c>
- RewriteEngine on
- RewriteCond %{REQUEST_FILENAME} !-d
- RewriteCond %{REQUEST_FILENAME} !-f
- RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
-</IfModule>
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^www.blskye.com$ [NC]
-RewriteRule ^(.*)$ http://www.blskye.com/$1 [L,R=301]
+Options +FollowSymLinks
+IndexIgnore */*
+
+#禁止访问目录
+Options -Indexes
+#404错误页面
+ErrorDocument 404 /404.html
+
+RewriteEngine on
+
+#301带www跳转
+#RewriteCond %{HTTP_HOST} !^blskye.com$ [NC]
+#RewriteRule ^(.*)$ http://blskye.com/$1 [L,R=301]
+
+#301不带www跳转
+RewriteCond %{HTTP_HOST} ^blskye.com [NC]
+RewriteRule ^(.*)$ http://www.blskye.com/$1 [L,R=301]
+
+#if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#otherwise forward it to index.php
+RewriteRule . index.php
