@@ -4,3 +4,6 @@
  RewriteCond %{REQUEST_FILENAME} !-f
  RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]
 </IfModule>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^blskye.com [NC]
+RewriteRule ^(.*)$ http://www.blskye.com/$1 [L,R=301]
