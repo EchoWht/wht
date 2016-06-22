@@ -70,8 +70,9 @@ class IndexController extends Controller
         if(empty($myblog)){
             $this->error('没有这篇文章！',U('/Blog/Index/'));
         }
-//        dump($myblog);
+        $blog_vistor=get_vister_num($blog['artid'], 'blog');
         $this->assign('myblog', $myblog);
+        $this->assign('blog_vistor', $blog_vistor);
         $this->display();
     }
 

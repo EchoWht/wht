@@ -46,18 +46,20 @@ $Cat = M("Cat");
     {
         $name = session('name');
         $this->assign('name', $name);
-
         $blog = array(
             'artid' => I('get.artid', 0)
         );
         $Blog = M("Blog");
         $myblog = $Blog->where('artid=' . $blog['artid'] . ' AND ispublic=1')->select();
-//        dump(empty($myblog));
         if(empty($myblog)){
             $this->error('没有这篇文章！',U('/Blog/Index/'));
         }
-//        dump($myblog);
+        /*记录访问*/
+        mode_vistor_log($blog['artid'], 'blog');
+        /*统计访问*/
+        $blog_vistor=get_vister_num($blog['artid'], 'blog');
         $this->assign('myblog', $myblog);
+        $this->assign('blog_vistor', $blog_vistor);
         $this->display();
     }
 }

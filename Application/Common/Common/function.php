@@ -36,6 +36,46 @@ function vistor_log($page_name){
     $result=$Visitorlog->add($visitor);
    // return $page_name;
 }
+
+/**
+ * 模块访问量记录
+ * @param  String $pagetype 类型
+ * @param Int $pageid 页面id
+ */
+function mode_vistor_log($pageid,$pagetype){
+    $ModuleVisitorlog=M('ModuleVisitorlog');
+    $page_url='http://'.$_SERVER['SERVER_NAME'].':'.$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+    $visitor=array(
+        'username'=>'',
+        'pageid'=>$pageid,
+        'pagetype'=>$pagetype,
+        'pageurl'=>$page_url,
+        'visittime'=>date("Y-m-d H:i:s"),
+        'userstate'=>'',
+        'userip'=>get_client_ip()
+    );
+    if (!session(name)){
+        $visitor['username']='v';
+        $visitor['userstate']=0;
+    }else{
+        $visitor['username']=session(name);
+        $visitor['userstate']=1;
+    }
+    $result=$ModuleVisitorlog->add($visitor);
+}
+/**
+ * 模块访问量统计
+ * @param  String $pagetype 类型
+ * @param Int $pageid 页面id
+ * @return Int
+ */
+function get_vister_num($pageid,$pagetype){
+    $ModuleVisitorlog=M('ModuleVisitorlog');
+    $condition['pageid'] = $pageid;
+    $condition['pagetype'] = $pagetype;
+    $count = $ModuleVisitorlog->where($condition)->count('id');
+    return $count;
+}
 /**
  * 获取当前月以及之前月份的年月
  * @param int $step 后退月数
