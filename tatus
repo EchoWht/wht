@@ -1,0 +1,185 @@
+[33mcommit 8ac3a6b4586331c5670a64efac08f00ced32b9f7[m
+Author: Echo <echowht@qq.com>
+Date:   Thu Jun 23 00:35:11 2016 +0800
+
+    更新htaccesse文件
+
+[33mcommit 1385f1310e0fa144c26e78bd68e53cc4c58e94c4[m
+Author: Echo <echowht@qq.com>
+Date:   Thu Jun 23 00:17:10 2016 +0800
+
+    更新htaccesse文件
+
+[33mcommit 9afd9b5e2bc8d8aa0fe2d6165505c52b35dc11a8[m
+Author: Echo <echowht@qq.com>
+Date:   Thu Jun 23 00:12:55 2016 +0800
+
+    更新htaccesse文件
+
+[33mcommit 3b28406f9000e95f2f1cb1bc97f6cc6fbcd0d0b7[m
+Author: Echo <echowht@qq.com>
+Date:   Thu Jun 23 00:11:13 2016 +0800
+
+    更新htaccesse文件
+
+[33mcommit b79550c50339bf944f5ac6fbd8ea55034c49f8b2[m
+Author: Echo <echowht@qq.com>
+Date:   Thu Jun 23 00:06:29 2016 +0800
+
+    更新htaccesse文件
+
+[33mcommit 1330c4f9823c323963f0c91464c7e92b33876c09[m
+Author: Echo <echowht@qq.com>
+Date:   Thu Jun 23 00:00:20 2016 +0800
+
+    更新htaccesse文件
+
+[33mcommit 8573fc86eb3ceee372af2b59dfe112850e78a106[m
+Author: Echo <echowht@qq.com>
+Date:   Wed Jun 22 23:54:34 2016 +0800
+
+    更新htaccesse文件
+
+[33mcommit 159735fb01ae2a229377dc7b7da1c1c13092cc00[m
+Author: Echo <echowht@qq.com>
+Date:   Wed Jun 22 23:51:29 2016 +0800
+
+    更新gitignore文件
+
+[33mcommit f6ca5d47d7b5051f897968e05c4bcd8ab5b58493[m
+Author: Shinecho <echowht@qq.com>
+Date:   Wed Jun 22 17:10:15 2016 +0800
+
+    完善评论功能
+
+[33mcommit 7b8ecc9291cfa30495b1b9c26cc328a3ae235514[m
+Author: Shinecho <echowht@qq.com>
+Date:   Wed Jun 22 16:48:23 2016 +0800
+
+    大厅增加评论功能
+
+[33mcommit cbd8572be8b339495251086e37a5cf89369e7b56[m
+Author: Shinecho <echowht@qq.com>
+Date:   Wed Jun 22 11:56:21 2016 +0800
+
+    增加评论功能
+
+[33mcommit fb0e1eccc518cee01cddf6a0ba70f0b42f211283[m
+Author: Shinecho <echowht@qq.com>
+Date:   Wed Jun 22 10:33:49 2016 +0800
+
+    显示访问量功能
+
+[33mcommit b4c4adb0e6e6a111063d400cbb4d394a3f62e1cf[m
+Author: Shinecho <echowht@qq.com>
+Date:   Wed Jun 22 09:50:25 2016 +0800
+
+    增加访问量功能
+
+[33mcommit 879b046f25219334a0b9721faf987a3387484a27[m
+Author: Shinecho <echowht@qq.com>
+Date:   Tue Jun 21 17:33:09 2016 +0800
+
+    BlogVisitorlogModel.class.php
+
+[33mcommit 2c5edb4aa24283ff7437518a6466015a8d6accca[m
+Author: Shinecho <echowht@qq.com>
+Date:   Tue Jun 21 15:55:15 2016 +0800
+
+    登录自动跳转到之前页面
+
+[33mcommit 84e8cc4aaa5438ec4a4b8254f16a75c114e53f8a[m
+Author: Shinecho <echowht@qq.com>
+Date:   Tue Jun 21 15:17:59 2016 +0800
+
+    blog中增加图片上传功能
+
+[33mcommit b0a0e29394ccd5334d66eec6413c64349905cd39[m
+Author: Shinecho <echowht@qq.com>
+Date:   Tue Jun 21 15:01:17 2016 +0800
+
+    blog中增加图片上传功能
+
+[33mcommit 41b65f251d4eb90b0e187019c7862d12bf883f93[m
+Author: Shinecho <echowht@qq.com>
+Date:   Tue Jun 21 14:57:32 2016 +0800
+
+    blog中增加图片上传功能
+
+[33mcommit 8c08db775bc444944f8571b0c85bc00bd3695d19[m
+Author: Shinecho <echowht@qq.com>
+Date:   Fri Jun 17 18:06:33 2016 +0800
+
+    更新设置分类
+
+[33mcommit 13ad3bd07e453e8fd91353712f77857ccf00e076[m
+Author: Shinecho <echowht@qq.com>
+Date:   Fri Jun 17 17:41:17 2016 +0800
+
+    更新设置分类
+
+[33mcommit ec0fc3dd4226f3df2adc0fe63c31ae545cdef390[m
+Author: Shinecho <echowht@qq.com>
+Date:   Fri Jun 17 17:08:19 2016 +0800
+
+    更新设置分类
+
+[33mcommit 5a552c501d623c8d740f02a4940f4d5c1e53fbba[m
+Author: 王昊天 <echowht@qq.com>
+Date:   Fri Jun 17 16:07:33 2016 +0800
+
+    Update .gitignore
+
+[33mcommit cea7b72b342fd641df468ccdc4e022dae618c2f2[m
+Author: Shinecho <echowht@qq.com>
+Date:   Fri Jun 17 15:59:53 2016 +0800
+
+    update gitignore
+
+[33mcommit 2146c8feff56663bd2c33f9934f055a5b307af39[m
+Author: Shinecho <echowht@qq.com>
+Date:   Fri Jun 17 15:50:57 2016 +0800
+
+    ignore
+
+[33mcommit 25ecc9954f5e97e2aa3b01e3f3a42bd0b47550b1[m
+Author: Shinecho <echowht@qq.com>
+Date:   Fri Jun 17 15:49:30 2016 +0800
+
+    删除.idea
+
+[33mcommit 362d716038b432989e8f7d61208acec6f9f66c2b[m
+Author: Shinecho <echowht@qq.com>
+Date:   Fri Jun 17 15:45:34 2016 +0800
+
+    ignore
+
+[33mcommit 719f8813005c785e65d7606c4dc1c4f92200803b[m
+Author: Shinecho <echowht@qq.com>
+Date:   Fri Jun 17 15:42:33 2016 +0800
+
+    删除缓存文件
+
+[33mcommit ac9bdc89828c2ad812fecd911c1197ac2f92e763[m
+Author: Shinecho <echowht@qq.com>
+Date:   Thu Jun 16 17:08:00 2016 +0800
+
+    update some css
+
+[33mcommit 470e0c0b36423d482da9ccade0412223e796b181[m
+Author: Shinecho <echowht@qq.com>
+Date:   Thu Jun 16 11:56:18 2016 +0800
+
+    u
+
+[33mcommit 170e3babe535f3c448fc778b38e11023b4dabf26[m
+Author: 王昊天 <echowht@qq.com>
+Date:   Thu Jun 16 11:17:38 2016 +0800
+
+    Update README.md
+
+[33mcommit c3b0d7333e65d83a87804f5047d14ed349e13e12[m
+Author: Shinecho <echowht@qq.com>
+Date:   Thu Jun 16 11:13:36 2016 +0800
+
+    www.blskye.com
