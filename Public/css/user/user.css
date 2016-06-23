@@ -1,0 +1,60 @@
+ol, ul {
+    list-style: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.circle-icon{
+    width: 100px; position: relative;top:-100px
+}
+.user-info{
+    position: relative;
+    top: -100px;
+}
+.user-name{
+    text-align: center;
+}
+.jumbotron{
+    /*background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);*/
+    background: #f5f5f5;
+}
+.user-info p{
+    font-size: 10px;
+    text-align: center;
+}
+.user-widget-statatistic{
+    max-width:300px ;
+    margin: 0 auto;
+}
+.user-widget-statatistic ul li.border-red {
+    border-top-color: #e36159;
+
+}
+.user-widget-statatistic ul li {
+    display: block;
+    text-align: center;
+    width: 33.333333333333336%;
+    float: left;
+    padding: 10px;
+    border-top: 3px solid #2baab1;
+}
+.user-widget-statatistic ul li {
+    display: block;
+    text-align: center;
+    width: 33.333333333333336%;
+    float: left;
+    padding: 10px;
+    border-top: 3px solid #2baab1;
+}
+.user-widget-statatistic ul li.border-yellow {
+    border-top-color: #edbc6c;
+}
+.user-widget-statatistic ul li {
+    display: block;
+    text-align: center;
+    width: 33.333333333333336%;
+    float: left;
+    padding: 10px;
+    border-top: 3px solid #2baab1;
+}
