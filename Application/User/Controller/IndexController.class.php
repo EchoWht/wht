@@ -41,4 +41,13 @@ class IndexController extends Controller
     {
         echo('hello');
     }
+    public function user(){
+        vendor('Sina.Sina');
+        $c=new \SaeTClientV2(C('WB_AKEY'),C('WB_SKEY') ,$_SESSION['token']['access_token'] );
+        $ms  = $c->home_timeline(); // done
+        $uid_get = $c->get_uid();
+        $uid = $uid_get['uid'];
+        $user_message = $c->show_user_by_id( $uid);//根据ID获取用户等基本信息
+        var_dump($user_message);
+    }
 }
