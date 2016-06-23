@@ -94,7 +94,7 @@ class IndexController extends Controller {
 		if ($token) {
 			$_SESSION['token'] = $token;
 			setcookie('weibojs_' . $o->client_id, http_build_query($token));
-			dump("OK");
+			$this->success('登录成功', '/User/Index/user');
 		} else {
 			dump("Error");
 		}
