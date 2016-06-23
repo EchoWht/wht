@@ -192,7 +192,6 @@ function excel(){
     $objWrite->save('Public/excel/demo2.xlsx');
 }
 
-
 //遍历用户分类
 function catlist($username){
     $Cat=M('Cat');

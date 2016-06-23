@@ -26,5 +26,6 @@ class IndexController extends Controller
     public function newstyle(){
         $this->display();
     }
+  
 
 }

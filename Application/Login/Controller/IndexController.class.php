@@ -72,4 +72,32 @@ class IndexController extends Controller {
 		$this->success('你已退出登录····',U('/'));
 	}
 
+	public function sina(){
+		echo "Hi Sina";
+		vendor('Sina.Sina');
+		$o= new \SaeTOAuthV2(C('WB_AKEY'),C('WB_SKEY'));
+		$oauth=$o->getAuthorizeURL(C('WB_CALLBACK_URL'));
+		header('Location:'.$oauth);
+	}
+	public function callback(){
+		vendor('Sina.Sina');
+		$o= new \SaeTOAuthV2(C('WB_AKEY'),C('WB_SKEY'));
+		if (isset($_REQUEST['code'])) {
+			$keys = array();
+			$keys['code'] = $_REQUEST['code'];
+			$keys['redirect_uri'] = C('WB_CALLBACK_URL');
+			try {
+				$token = $o->getAccessToken('code', $keys);
+			} catch (OAuthException $e) {
+			}
+		}
+		if ($token) {
+			$_SESSION['token'] = $token;
+			setcookie('weibojs_' . $o->client_id, http_build_query($token));
+			dump("OK");
+		} else {
+			dump("Error");
+		}
+	}
+
 }
