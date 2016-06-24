@@ -120,10 +120,11 @@ class SetController extends Controller
     /*sina绑定用户*/
     public function sinabounduser(){
 
-        if (isBoundUserBySina($_SESSION['sina_id'])==0){
+        if (isset($_SESSION['sina_id'])&&isBoundUserBySina($_SESSION['sina_id'])==0){
             
         }else{
             $this->success('走你~', '/index.php/');
+            exit();
         }
         $this->display();
     }
