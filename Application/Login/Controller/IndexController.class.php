@@ -94,7 +94,13 @@ class IndexController extends Controller {
 		if ($token) {
 			$_SESSION['token'] = $token;
 			setcookie('weibojs_' . $o->client_id, http_build_query($token));
-			$this->success('通过微博登录成功', '/index.php/User/Index/user');
+			$c=new \SaeTClientV2(C('WB_AKEY'),C('WB_SKEY') ,$_SESSION['token']['access_token'] );
+			$ms  = $c->home_timeline(); // done
+			$uid_get = $c->get_uid();
+			$uid = $uid_get['uid'];
+			$user_message = $c->show_user_by_id( $uid);//根据ID获取用户等基本信息
+			dump($user_message);
+//			$this->success('通过微博登录成功', '/index.php/User/Index/user');
 		} else {
 			dump("Error");
 		}

@@ -203,3 +203,9 @@ function getIco($url){
     $host=$tempu['host'];
     return $host;
 }
+
+/*通过sina登录*/
+function setUserInfoBySina(){
+    
+}
+
