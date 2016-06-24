@@ -47,8 +47,8 @@ class IndexController extends Controller
         $ms  = $c->home_timeline(); // done
         $uid_get = $c->get_uid();
         $uid = $uid_get['uid'];
-        $user_message = $c->show_user_by_id( 2425480757);//根据ID获取用户等基本信息
-        dump($user_message);
+        $user_message = $c->show_user_by_id( $uid);//根据ID获取用户等基本信息
+//        dump($user_message);
         $this->assign('user_message',$user_message);
         $this->display();
     }

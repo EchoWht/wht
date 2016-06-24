@@ -205,7 +205,39 @@ function getIco($url){
 }
 
 /*通过sina登录*/
-function setUserInfoBySina(){
-    
+/**
+ * 查询微博用户是否绑定本站会员
+ * @param String $sina_id
+ * @return int
+ */
+function isBoundUserBySina($sina_id){
+    $User=M('User');
+    $condation['sinaopenid']=$sina_id;
+    $result= $User->where($condation)->find();
+    if ($result){
+        return 1;
+    }else{
+        return 0;
+    }
+}
+/**
+ * 获取sina的openid
+ * @return int
+ */
+function getSinauserId(){
+    vendor('Sina.Sina');
+    $c=new \SaeTClientV2(C('WB_AKEY'),C('WB_SKEY') ,$_SESSION['token']['access_token'] );
+    $ms  = $c->home_timeline(); // done
+    $uid_get = $c->get_uid();
+    $uid = $uid_get['uid'];
+    return $uid;
+}
+/**
+ * 根据id获取用户信息
+ * @param String $sina_id
+ * @return array
+ */
+function setUserInfoBySinaId($sina_id){
+
 }
 
