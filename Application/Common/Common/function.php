@@ -251,6 +251,21 @@ function isUserBoundSina($username){
     }
 }
 /**
+ * 查询email是否存在
+ * @param String $email
+ * @return string
+ */
+function isEmailBound($email){
+    $User=M('User');
+    $condation['email']=$email;
+    $result= $User->where($condation)->find();
+    if ($result){
+        return 1;
+    }else{
+        return 0;
+    }
+}
+/**
  * 获取sina的openid
  * @return int
  */

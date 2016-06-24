@@ -120,29 +120,65 @@ class SetController extends Controller
     /*sina绑定用户*/
     public function sinabounduser(){
 
-//        if (isBoundUserBySina($_SESSION['sina_id'])==0){
-//
-//        }else{
-//            $this->success('走你~', '/index.php/');
-//        }
+        if (isBoundUserBySina($_SESSION['sina_id'])==0){
+            
+        }else{
+            $this->success('走你~', '/index.php/');
+        }
         $this->display();
     }
-    /*sina绑定邮箱*/
-    public function sinaboundemail(){
+    /*sina*/
+    public function user(){
         $username=I("get.username",0);
         $message="";
         if(issetusername($username)==0){
             //妥了，还没有人用这个用户名，就这个了？
             $message=100;
         }else{
-//           if(isUserBoundSina($username)){
-////                已绑定微博
-//           }else{
-////               输入密码并绑定
-//           }
             $message=isUserBoundSina($username);
         }
         $this->ajaxReturn($message);
+    }
+    public function email(){
+        $email=I("get.email",0);
+        $message=isEmailBound($email);
+        $this->ajaxReturn($message);
+    }
+    public function sinabound(){
+        $username=I("post.username",0);
+        $email=I("post.email",0);
+        $User = M("User");
+        if(issetusername($username)==0){
+            //妥了，还没有人用这个用户名，就这个了？
+            if($email!=null&&isEmailBound($email)==0){
+                $user=array(
+                    'username'=>$username,
+                    'email'=>$email,
+                    'passwd'=>md5(I('post.password')),
+                    'registertime'=> date("Y-m-d H:i:s")
+                );
+
+                $result=$User->add($user);
+                if($result){
+                    session('name',$user['username']);
+                    $this->success('注册成功', U('/Home/Index/index'));
+                }else{
+                    $message=false;
+                }
+            }
+
+        }else{
+//            如果绑定了则输出false
+            if(isUserBoundSina($username)){
+                $message=false;
+            }else{
+                $result= $User->where('username="'.$username.'" AND passwd="'.md5(I('post.password')).'"')->find();
+                if($result==null){
+                    $message = false;
+                }
+            };
+        }
+
     }
 
 }
