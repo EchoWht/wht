@@ -221,6 +221,36 @@ function isBoundUserBySina($sina_id){
     }
 }
 /**
+ * 查询username是否被占用
+ * @param String $username
+ * @return string
+ */
+function issetusername($username){
+    $User=M('User');
+    $condation['username']=$username;
+    $result= $User->where($condation)->find();
+    if ($result){
+        return 1;
+    }else{
+        return 0;
+    }
+}
+/**
+ * 查询username是否绑定微博
+ * @param String $username
+ * @return string
+ */
+function isUserBoundSina($username){
+    $User=M('User');
+    $condation['username']=$username;
+    $result= $User->where($condation)->find();
+    if ($result&&$result['sinaopenid']!=null){
+        return 1;
+    }else{
+        return 0;
+    }
+}
+/**
  * 获取sina的openid
  * @return int
  */

@@ -117,4 +117,32 @@ class SetController extends Controller
             echo'no';
         }
     }
+    /*sina绑定用户*/
+    public function sinabounduser(){
+
+//        if (isBoundUserBySina($_SESSION['sina_id'])==0){
+//
+//        }else{
+//            $this->success('走你~', '/index.php/');
+//        }
+        $this->display();
+    }
+    /*sina绑定邮箱*/
+    public function sinaboundemail(){
+        $username=I("get.username",0);
+        $message="";
+        if(issetusername($username)==0){
+            //妥了，还没有人用这个用户名，就这个了？
+            $message=100;
+        }else{
+//           if(isUserBoundSina($username)){
+////                已绑定微博
+//           }else{
+////               输入密码并绑定
+//           }
+            $message=isUserBoundSina($username);
+        }
+        $this->ajaxReturn($message);
+    }
+
 }

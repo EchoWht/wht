@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录</title>
+
+    <link rel="stylesheet" href="/Public/bootstrap/css/bootstrap.min.css"/>
+
+    <link href="/Public/bootstrapvalidator/css/bootstrapValidator.css" type="text/css">
+    <script src="/Public/bootstrap/js/jquery.min.js"></script>
+    <script src="/Public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Public/bootstrapvalidator/js/bootstrapValidator.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <!-- form: -->
+        <section>
+            <div class="col-lg-8 col-lg-offset-2">
+                <div class="page-header">
+                    <h2>绑定</h2>
+                </div>
+                <form id="defaultForm" method="get" class="form-horizontal" action="{:U('User/Set/sinaboundemail')}">
+                    <div class="alert alert-success" style="display: none;"></div>
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">用户名</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="username"/>
+                        </div>
+                    </div>
+                    <div id="email" style="display: none">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">电子邮箱</label>
+                            <div class="col-lg-5">
+                                <input type="email" class="form-control" name="email"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="passwd" style="display: none">
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">密码</label>
+                            <div class="col-lg-5">
+                                <input type="password" class="form-control" name="passwds"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-5 col-lg-offset-3">
+                            <button style="width:100%;" type="button" id="step_one" class="btn btn-primary">完成
+                            </button>
+                            <button style="width:100%;display: none" type="button"  id="step_two" class="btn btn-primary">完成
+                            </button>
+                            <button style="width:100%;display: none" type="button"  id="step_three" class="btn btn-primary">完成
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                </form>
+                <hr>
+            </div>
+        </section>
+        <!-- :form -->
+    </div>
+</div>
+</body>
+<script src="/Public/js/sina.js"></script>
+</html>
