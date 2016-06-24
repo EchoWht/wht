@@ -94,11 +94,14 @@ class IndexController extends Controller {
 		if ($token) {
 			$_SESSION['token'] = $token;
 			setcookie('weibojs_' . $o->client_id, http_build_query($token));
-
 			$sina_id=getSinauserId();
 			isBoundUserBySina($sina_id);
-			
-			dump(isBoundUserBySina($sina_id));
+			if (isBoundUserBySina($sina_id)==0){
+				$this->success('通过微博登录成功', '/index.php/User/Index/user');
+			}else{
+				$_SESSION['username']=isBoundUserBySina($sina_id)['username'];
+				dump($_SESSION);
+			}
 //			$this->success('通过微博登录成功', '/index.php/User/Index/user');
 		} else {
 			dump("Error");
