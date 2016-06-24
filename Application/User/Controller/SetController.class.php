@@ -121,7 +121,7 @@ class SetController extends Controller
     public function sinabounduser(){
 
         if (isset($_SESSION['sina_id'])&&isBoundUserBySina($_SESSION['sina_id'])==0){
-            
+
         }else{
             $this->success('走你~', '/index.php/');
             exit();
@@ -155,6 +155,7 @@ class SetController extends Controller
                 $user=array(
                     'username'=>$username,
                     'email'=>$email,
+                    'sinaopenid'=>$_SESSION['sina_id'],
                     'passwd'=>md5(I('post.password')),
                     'registertime'=> date("Y-m-d H:i:s")
                 );
