@@ -208,14 +208,14 @@ function getIco($url){
 /**
  * 查询微博用户是否绑定本站会员
  * @param String $sina_id
- * @return int
+ * @return string
  */
 function isBoundUserBySina($sina_id){
     $User=M('User');
     $condation['sinaopenid']=$sina_id;
     $result= $User->where($condation)->find();
     if ($result){
-        return 1;
+        return $result;
     }else{
         return 0;
     }
