@@ -26,6 +26,7 @@ class IndexController extends Controller {
 				$User->lastlogintime = date("Y-m-d H:i:s");
 				$User->where('username="'.$user['username'].'"')->save();
 				session('name',$user['username']);
+				session('codestyle',$result['codestyle']);
 				if($result){
 					//设置成功
 					$this->addNote();
@@ -60,6 +61,7 @@ class IndexController extends Controller {
 				$User->lastlogintime = date("Y-m-d H:i:s");
 				$User->where('username="'.$user['username'].'"')->save();
 				session('name',$user['username']);
+				session('codestyle',$result['codestyle']);
 				if($result){
 					echo ('ok');
 				} else {

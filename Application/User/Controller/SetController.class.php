@@ -185,6 +185,23 @@ class SetController extends Controller
                     $message = 1001;
 //                    $message='注册失败';
                 }
+            }else if ($email==null){
+                $user = array(
+                    'username' => $username,
+                    'email' => $email,
+                    'sinaopenid' => $_SESSION['sina_id'],
+                    'passwd' => md5(I('post.password')),
+                    'registertime' => date("Y-m-d H:i:s")
+                );
+
+                $result = $User->add($user);
+                if ($result) {
+                    session('name', $user['username']);
+                    $this->success('注册成功', U('/Home/Index/index'));
+                } else {
+                    $message = 1001;
+//                    $message='注册失败';
+                }
             }
 
         } else {
