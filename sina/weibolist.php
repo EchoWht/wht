@@ -42,6 +42,7 @@ if( isset($_REQUEST['text']) ) {
 <?php foreach( $ms['statuses'] as $item ): ?>
 <div style="padding:10px;margin:5px;border:1px solid #ccc">
 	<?=$item['text'];?>
+	<?=print_r($item);?>
 </div>
 <?php endforeach; ?>
 <?php endif; ?>

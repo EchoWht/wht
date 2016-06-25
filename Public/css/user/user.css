@@ -61,3 +61,80 @@ ul {
 .app-list{
 
 }
+.user-widget.user-widget2 {
+    text-align: left;
+}
+.user-widget {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15);
+}
+.user-widget.user-widget2 .user-widget-body {
+    padding: 20px;
+}
+.user-widget .user-widget-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+}
+.bg-success {
+    background-color: #2baab1;
+    color: #fff;
+}
+.bg-connect {
+    background-color: #edbc6c;
+    color: #fff;
+}
+.user-widget.user-widget2 img {
+    float: left;
+}
+.user-widget .user-widget-body img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50em;
+    -moz-border-radius: 50em;
+    -webkit-border-radius: 50em;
+}
+.user-widget.user-widget2 .user-widget-body .user-detail {
+    margin-left: 65px;
+}
+.m-top-sm {
+    margin-top: 10px;
+}
+.user-widget .user-widget-body .small-text {
+    font-size: 70%;
+}
+.text-white {
+    color: #fff;
+}
+.badge-warning, .label-warning {
+    background-color: #edbc6c;
+    color: #fff;
+}
+.badge-danger, .label-danger {
+    background-color: #e36159;
+    color: #fff;
+}
+.badge-info, .label-info {
+    background-color: #23b7e5;
+    color: #fff;
+}
+
+.user-widget .user-widget-body i {
+   font-size: 50px;
+    border-radius: 50em;
+    -moz-border-radius: 50em;
+    -webkit-border-radius: 50em;
+}
+.user-widget.user-widget2 .user-widget-body  i {
+    float: left;
+}
