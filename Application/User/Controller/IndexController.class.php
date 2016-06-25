@@ -17,10 +17,12 @@ class IndexController extends Controller
         }
 //        Blog
         $Blog = M('Blog');
-        $blog = $Blog->limit(9)->where('username="' . $uname . '"')->select();
+        $condition['username']=$uname;
+        $condition['ispublic']=1;
+        $blog = $Blog->where($condition)->order("artid")->limit(6)->select();
 //         Note
         $Note = M('Note');
-        $note = $Note->limit(9)->where('username="' . $uname . '"')->select();
+        $note = $Note->where($condition)->order("noteid")->limit(6)->select();
 
         $this->assign('user', $user);
         $this->assign('uname', $uname);

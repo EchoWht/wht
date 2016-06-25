@@ -296,4 +296,16 @@ function getUserInfoBySinaId($sina_id){
 function showCodeStyle($sina_id){
 
 }
+/**
+ * 显示用户的热门blog
+ * @param String $num
+ * @param String $username
+ * @return array
+ */
+function getBlogByUsername($num,$username){
+    $Blog=M('Blog');
+    $condition['username']=$username;
+    $result = $Blog->where($condition)->limit($num)->select();
+    return $result;
+}
 
