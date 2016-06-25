@@ -200,7 +200,7 @@ class SetController extends Controller
 //                    $message = '密码错误';
                 } else {
                     $condition['username'] = $username;
-                    $condition['passwd'] = md5(I('post.password'));
+                    $condition['passwd'] = md5(I('post.passwd'));
                     $data['sinaopenid'] = $_SESSION['sina_id'];
                     $u = $User->where($condition)->save($data);
                     if ($u) {
