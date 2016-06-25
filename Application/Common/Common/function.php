@@ -285,4 +285,12 @@ function getSinauserId(){
 function setUserInfoBySinaId($sina_id){
 
 }
+/**
+ * 显示用户的代码样式
+ * @param String $sina_id
+ * @return array
+ */
+function showCodeStyle($sina_id){
+
+}
 

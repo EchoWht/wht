@@ -205,6 +205,7 @@ class SetController extends Controller
                     $u = $User->where($condition)->save($data);
                     if ($u) {
                         session('name', $username);
+                        session('codestyle',$result['codestyle']);
                         $this->success('绑定成功', U('/Home/Index/index'));
                         exit();
                     } else {
