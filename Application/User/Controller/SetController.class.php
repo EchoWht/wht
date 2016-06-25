@@ -193,7 +193,8 @@ class SetController extends Controller
                 $message=1002;
 //                $message = "该用户已经绑定";
             } else {
-                $result = $User->where('username="' . $username . '" AND passwd="' . md5(I('post.password')) . '"')->find();
+                dump($_POST);
+                $result = $User->where('username="' . $username . '" AND passwd="' . md5(I('post.passwd')) . '"')->find();
                 if ($result == null) {
                     $message=1003;
 //                    $message = '密码错误';
