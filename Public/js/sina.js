@@ -88,7 +88,7 @@ $('#step_one').click(
                     $(".alert").html("绑定失败").fadeIn()
                 }else {
                     $(".alert").html("绑定成功").fadeIn()
-                    setTimeout(window.location.href(host),1000);
+                    setTimeout(window.location.href=host,1000);
                 }
             }
         });
