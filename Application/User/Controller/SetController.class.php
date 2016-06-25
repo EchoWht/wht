@@ -166,7 +166,7 @@ class SetController extends Controller
         $email = I("post.email", 0);
         $User = M("User");
         $message='';
-        if (issetusername($username) == 0) {
+        if (issetusername($username) == 0&&$username!=null) {
             //妥了，还没有人用这个用户名，就这个了？
             if ($email != null && isEmailBound($email) == 0) {
                 $user = array(
@@ -180,7 +180,9 @@ class SetController extends Controller
                 $result = $User->add($user);
                 if ($result) {
                     session('name', $user['username']);
+                    session('codestyle','zenburn');
                     $this->success('注册成功', U('/Home/Index/index'));
+                    exit();
                 } else {
                     $message = 1001;
 //                    $message='注册失败';
@@ -197,7 +199,9 @@ class SetController extends Controller
                 $result = $User->add($user);
                 if ($result) {
                     session('name', $user['username']);
+                    session('codestyle','zenburn');
                     $this->success('注册成功', U('/Home/Index/index'));
+                    exit();
                 } else {
                     $message = 1001;
 //                    $message='注册失败';
