@@ -282,8 +282,11 @@ function getSinauserId(){
  * @param String $sina_id
  * @return array
  */
-function setUserInfoBySinaId($sina_id){
-
+function getUserInfoBySinaId($sina_id){
+    vendor('Sina.Sina');
+    $c=new \SaeTClientV2(C('WB_AKEY'),C('WB_SKEY') ,$_SESSION['token']['access_token'] );
+    $user_message = $c->show_user_by_id( $sina_id);
+    return $user_message;
 }
 /**
  * 显示用户的代码样式
