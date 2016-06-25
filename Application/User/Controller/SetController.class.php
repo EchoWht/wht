@@ -193,7 +193,7 @@ class SetController extends Controller
                 $message=1002;
 //                $message = "该用户已经绑定";
             } else {
-                dump($_POST);
+                //dump($_POST);
                 $result = $User->where('username="' . $username . '" AND passwd="' . md5(I('post.passwd')) . '"')->find();
                 if ($result == null) {
                     $message=1003;
@@ -206,6 +206,7 @@ class SetController extends Controller
                     if ($u) {
                         session('name', $username);
                         $this->success('绑定成功', U('/Home/Index/index'));
+                        exit();
                     } else {
                         $message=1004;
 //                        $message = '绑定失败';
