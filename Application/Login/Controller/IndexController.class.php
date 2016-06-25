@@ -102,7 +102,7 @@ class IndexController extends Controller {
 				$this->success('通过微博登录成功', '/index.php/User/Set/sinabounduser');
 			}else{
 				$_SESSION['name']=isBoundUserBySina($sina_id)['username'];
-				dump($_SESSION);
+				$this->success('通过微博登录成功', '/index.php/');
 			}
 //			$this->success('通过微博登录成功', '/index.php/User/Index/user');
 		} else {
