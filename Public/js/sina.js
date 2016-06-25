@@ -70,7 +70,7 @@ $('#step_one').click(
         var username=$("#inp-username").val();
         var passwd=$("#inp-passwd").val();
         $.ajax({
-            type:'get',
+            type:'post',
             url:host+'/index.php/User/Set/sinabound',
             data:{
                 username:username,
@@ -87,7 +87,7 @@ $('#step_one').click(
                 }else if(result==1004){
                     $(".alert").html("绑定失败").fadeIn()
                 }else {
-                    
+
                 }
             }
         });
