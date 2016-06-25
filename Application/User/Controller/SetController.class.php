@@ -182,19 +182,21 @@ class SetController extends Controller
                     session('name', $user['username']);
                     $this->success('注册成功', U('/Home/Index/index'));
                 } else {
-//                    $message = false;
-                    $message='注册失败';
+                    $message = 1001;
+//                    $message='注册失败';
                 }
             }
 
         } else {
 //            如果绑定了则输出false
             if (isUserBoundSina($username)) {
-                $message = "该用户已经绑定";
+                $message=1002;
+//                $message = "该用户已经绑定";
             } else {
                 $result = $User->where('username="' . $username . '" AND passwd="' . md5(I('post.password')) . '"')->find();
                 if ($result == null) {
-                    $message = '密码错误';
+                    $message=1003;
+//                    $message = '密码错误';
                 } else {
                     $condition['username'] = $username;
                     $condition['passwd'] = md5(I('post.password'));
@@ -204,7 +206,8 @@ class SetController extends Controller
                         session('name', $username);
                         $this->success('绑定成功', U('/Home/Index/index'));
                     } else {
-                        $message = '绑定失败';
+                        $message=1004;
+//                        $message = '绑定失败';
                     }
                 }
 
