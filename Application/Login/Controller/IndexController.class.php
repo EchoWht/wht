@@ -95,7 +95,6 @@ class IndexController extends Controller {
 			$_SESSION['token'] = $token;
 			setcookie('weibojs_' . $o->client_id, http_build_query($token));
 			$sina_id=getSinauserId();
-
 			isBoundUserBySina($sina_id);
 			if (isBoundUserBySina($sina_id)==0){
 				$_SESSION['sina_id']=$sina_id;
