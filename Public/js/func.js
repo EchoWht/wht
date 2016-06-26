@@ -7,6 +7,7 @@ var tipok=document.getElementById("tipok");
 var tipcancel=document.getElementById("tipcancel");
 //提示框脚
 var maintipfoot=document.getElementById("maintip-foot");
+var host="http://"+window.location.host;
 
 /*document.getElementById*/
 
