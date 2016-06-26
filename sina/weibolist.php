@@ -10,7 +10,6 @@ $uid_get = $c->get_uid();
 $uid = $uid_get['uid'];
 $user_message = $c->show_user_by_id( $uid);//根据ID获取用户等基本信息
 //var_dump($user_message);
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">

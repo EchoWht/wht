@@ -26,6 +26,8 @@ class IndexController extends Controller
     public function newstyle(){
         $this->display();
     }
-  
+    public function donate(){
+        $this->display();
+    }
 
 }
