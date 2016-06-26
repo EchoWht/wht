@@ -143,11 +143,11 @@ class IndexController extends Controller {
 		$noteid=$_POST['noteid'];
 		$Note = D("Note");
 		$note=$Note->getUserNote($noteid,$username);
-		if ($note=null){
+		if ($note==null){
 			$message="没有这条note";
 		}else{
 
-			$message=sendSinaText($note['noteurl']);
+			$message=sendSinaText($_POST['noteid']);
 		}
 		$this->ajaxReturn($message) ;
 	}
