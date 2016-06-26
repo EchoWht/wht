@@ -141,7 +141,7 @@ class IndexController extends Controller {
 	public function sharesina(){
 		$username=$_SESSION['name'];
 		$noteid=$_POST['noteid'];
-		$Note = M("Note");
+		$Note = D("Note");
 		$note=$Note->getUserNote($noteid,$username);
 		if ($note=null){
 			$message="没有这条note";
