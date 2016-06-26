@@ -146,8 +146,8 @@ class IndexController extends Controller {
 		if ($note==null){
 			$message="没有这条note";
 		}else{
-			$text='<a href="">';
-			$message=sendSinaText($note['noteurl']);
+			$text='<a href="'.$note['noteurl'].'">'.$note['notetitle'].'</a>';
+			$message=sendSinaText();
 		}
 		$this->ajaxReturn($message) ;
 	}
