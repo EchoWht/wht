@@ -322,7 +322,7 @@ function getSinaUserMessage(){
  * @return array
  */
 function sendSinaText($text){
-    $message='';
+    $message=null;
     vendor('Sina.Sina');
     $c=new \SaeTClientV2(C('WB_AKEY'),C('WB_SKEY') ,$_SESSION['token']['access_token'] );
     if( isset($text) ) {
