@@ -207,12 +207,13 @@ class IndexController extends Controller
     }
 /*分享到sina微博*/
     public function sharesina(){
-        $username=$_SESSION['name'];
-        $artid=$_POST['blogid'];
-        if ($artid==null){
-            $message="没有这条blog";
+        $blogid=$_POST['blogid'];
+        $Blog = D("Blog");
+        $blog=$Blog->getUserBlogById($blogid);
+        if ($blog==null){
+            $message="没有这条note";
         }else{
-            $text=$_SERVER['SERVER_NAME'].U('/index.php/Home/Blog/readMore').'?artid='.$artid;
+            $text=$blog['arttitle'].'http://'.$_SERVER['SERVER_NAME'].U('/index.php/Home/Blog/readMore').'?artid='.$blogid;
             $message=sendSinaText($text);
         }
         $this->ajaxReturn($message) ;
