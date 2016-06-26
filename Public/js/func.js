@@ -335,13 +335,31 @@ function catkey(cat){
 	document.getElementById('catword').value=cat;
 	document.getElementById('catwordform').submit();
 }
-//分享到微博
+//note分享到微博
 function sharesina(noteid) {
 	$.ajax({
 		type:'post',
 		url:host+'/index.php/Note/Index/sharesina',
 		data:{
 			noteid:noteid
+		},
+		success:function(result){
+			if (result==1000){
+				$(".alert").attr('class','alert-success').html("分享成功").fadeIn();
+			}else {
+				$(".alert").attr('class','alert-danger').html("分享失败"+result).fadeIn();
+			}
+			$(".alert").fadeOut(3000);
+		}
+	})
+}
+//note分享到微博
+function shareBlogsina(blogid) {
+	$.ajax({
+		type:'post',
+		url:host+'/index.php/Blog/Index/sharesina',
+		data:{
+			blogid:blogid
 		},
 		success:function(result){
 			if (result==1000){

@@ -205,7 +205,17 @@ class IndexController extends Controller
             echo "<font color=\"red\"size=\"2\">*文件格式不正确（必须为.jpg/.gif/.bmp/.png文件）</font>";
         }
     }
-    public function hi(){
-        echo "hi";
+/*分享到sina微博*/
+    public function sharesina(){
+        $username=$_SESSION['name'];
+        $artid=$_POST['blogid'];
+        if ($artid==null){
+            $message="没有这条blog";
+        }else{
+            $text=U('/index.php/Home/Blog/readMore?artid=').$artid;
+            $message=sendSinaText($text);
+        }
+        $this->ajaxReturn($message) ;
     }
+
 }

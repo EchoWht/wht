@@ -40,8 +40,13 @@
                 <li>
                     <span class="fa fa-eye"></span>{$blog_vistor}
                 </li>
+                <li style="float: right;">
+                    <a  title="分享到微博" href="javascript:void(0);" onclick="shareBlogsina({$myblog[0][artid]})">
+                        <span class="glyphicon glyphicon-share"></span>
+                    </a>
+                </li>
                 <if condition="($name eq $myblog[0][username])">
-                    <li style="float: right">
+                    <li style="float: right;">
                         <a  title="删除" href="javascript:void(0);" onclick="deleteBlog({$myblog[0][artid]})">
                             <span class="glyphicon glyphicon-trash"></span>
                         </a>
