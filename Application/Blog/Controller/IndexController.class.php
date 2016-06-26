@@ -213,7 +213,7 @@ class IndexController extends Controller
         if ($blog==null){
             $message="没有这条note";
         }else{
-            $text=$blog['arttitle'].'http://'.$_SERVER['SERVER_NAME'].U('/index.php/Home/Blog/readMore').'?artid='.$blogid;
+            $text=$blog['arttitle'].'http://'.$_SERVER['SERVER_NAME'].U('/Home/Blog/readMore').'?artid='.$blogid;
             $message=sendSinaText($text);
         }
         $this->ajaxReturn($message) ;
