@@ -137,4 +137,8 @@ class IndexController extends Controller {
 		$result=$Note->where('noteid='.$note['noteid'].'')->save($note);
 		$this->ajaxReturn($result);
 	}
+/*分享到sina微博*/
+	public function sharesina(){
+		 $this->ajaxReturn(sendSinaText($_GET['text'])) ;
+	}
 }

@@ -308,4 +308,33 @@ function getBlogByUsername($num,$username){
     $result = $Blog->where($condition)->limit($num)->select();
     return $result;
 }
+/**
+ * 获取sina用户信息
+ * @return array
+ */
+function getSinaUserMessage(){
+
+}
+
+/**
+ * 发送文字微博
+ * @param String text
+ * @return array
+ */
+function sendSinaText($text){
+    $message='';
+    vendor('Sina.Sina');
+    $c=new \SaeTClientV2(C('WB_AKEY'),C('WB_SKEY') ,$_SESSION['token']['access_token'] );
+    if( isset($text) ) {
+        $ret = $c->update( $text,90,90 );
+        if ( isset($ret['error_code']) && $ret['error_code'] > 0 ) {
+//            发送失败
+            $message= "发送失败，错误：{$ret['error_code']}:{$ret['error']}";
+        } else {
+//            发送成功
+            $message= 1000;
+        }
+    }
+   return $message;
+}
 
