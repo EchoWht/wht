@@ -341,15 +341,15 @@ function sharesina(noteid) {
 		type:'post',
 		url:host+'/index.php/Note/Index/sharesina',
 		data:{
-			sinaid:noteid
+			noteid:noteid
 		},
 		success:function(result){
-			if (result=1000){
-				$(".alert").html("分享成功").fadeIn();
+			if (result==1000){
+				$(".alert").attr('class','alert-success').html("分享成功").fadeIn();
 			}else {
-				$(".alert").html("分享失败").fadeIn();
+				$(".alert").attr('class','alert-danger').html("分享失败"+result).fadeIn();
 			}
-			$(".alert").html("分享成功").fadeOut();
+			$(".alert").fadeOut(3000);
 		}
 	})
 }

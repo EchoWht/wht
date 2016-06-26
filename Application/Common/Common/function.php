@@ -329,7 +329,7 @@ function sendSinaText($text){
         $ret = $c->update( $text,90,90 );
         if ( isset($ret['error_code']) && $ret['error_code'] > 0 ) {
 //            发送失败
-            $message= "发送失败，错误：{$ret['error_code']}:{$ret['error']}";
+            $message= "/n错误：{$ret['error_code']}:{$ret['error']}";
         } else {
 //            发送成功
             $message= 1000;
