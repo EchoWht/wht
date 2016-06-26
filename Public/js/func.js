@@ -335,3 +335,21 @@ function catkey(cat){
 	document.getElementById('catword').value=cat;
 	document.getElementById('catwordform').submit();
 }
+//分享到微博
+function sharesina(noteid) {
+	$.ajax({
+		type:'post',
+		url:host+'/index.php/Note/Index/sharesina',
+		data:{
+			sinaid:noteid
+		},
+		success:function(result){
+			if (result=1000){
+				$(".alert").html("分享成功").fadeIn();
+			}else {
+				$(".alert").html("分享失败").fadeIn();
+			}
+			$(".alert").html("分享成功").fadeOut();
+		}
+	})
+}

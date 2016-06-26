@@ -139,6 +139,15 @@ class IndexController extends Controller {
 	}
 /*分享到sina微博*/
 	public function sharesina(){
-		 $this->ajaxReturn(sendSinaText($_GET['text'])) ;
+		$username=$_SESSION['name'];
+		$noteid=$_POST['noteid'];
+		$Note = M("Note");
+		$note=$Note->getUserNote($noteid,$username);
+		if ($note=null){
+			$message="没有这条note";
+		}else{
+			$message=sendSinaText($_POST['noteid']);
+		}
+		$this->ajaxReturn($message) ;
 	}
 }
