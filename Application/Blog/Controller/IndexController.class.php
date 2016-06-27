@@ -97,7 +97,7 @@ class IndexController extends Controller
     {
         $name = session('name');
         $this->assign('name', $name);
-        if (!session(name)){
+        if (!session('name')){
             $this->success('您还没有登录', U('/Login/Index'));
             exit();
         }
