@@ -6,6 +6,7 @@ include_once( 'saetv2.ex.class.php' );
 
 $c = new SaeTClientV2( WB_AKEY , WB_SKEY , $_SESSION['token']['access_token'] );
 $ms  = $c->home_timeline(); // done
+print_r($ms);
 $uid_get = $c->get_uid();
 $uid = $uid_get['uid'];
 $user_message = $c->show_user_by_id( $uid);//根据ID获取用户等基本信息
