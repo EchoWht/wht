@@ -19,6 +19,7 @@ if (isset($_REQUEST['code'])) {
 if ($token) {
     $_SESSION['token'] = $token;
     setcookie('weibojs_' . $o->client_id, http_build_query($token));
+    print_r($token);
     ?>
     授权完成,<a href="weibolist.php">进入你的微博列表页面</a><br/>
     <?php
