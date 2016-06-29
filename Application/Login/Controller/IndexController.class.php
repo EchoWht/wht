@@ -35,6 +35,7 @@ class IndexController extends Controller
                 session('name', $user['username']);
 //				获取用户代码样式
                 session('codestyle', $result['codestyle']);
+                $_SESSION['token']['access_token']=$result['sinaaccesstoken'];
 //				session('codestyle',)
                 if ($result) {
 
