@@ -223,6 +223,7 @@ class SetController extends Controller
                     $condition['username'] = $username;
                     $condition['passwd'] = md5(I('post.passwd'));
                     $data['sinaopenid'] = $_SESSION['sina_id'];
+                    $data['sinaaccesstoken'] = $_SESSION['token']['access_token'];
                     $u = $User->where($condition)->save($data);
                     if ($u) {
                         session('name', $username);

@@ -10,5 +10,7 @@ namespace User\Model;
 
 use Think\Model;
 class UserModel extends Model {
-
+    public function insertSinaAccessToken($access_token){
+        
+    }
 }
