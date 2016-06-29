@@ -364,9 +364,9 @@ function shareBlogsina(blogid) {
 		},
 		success:function(result){
 			if (result==1000){
-				$(".alert").attr('class','alert-success').html("分享成功").fadeIn();
+				$(".alert").addClass('alert-success').html("分享成功").fadeIn();
 			}else {
-				$(".alert").attr('class','alert-danger').html("分享失败"+result).fadeIn();
+				$(".alert").addClass('alert-danger').html("分享失败"+result).fadeIn();
 			}
 			$(".alert").fadeOut(3000);
 		}
