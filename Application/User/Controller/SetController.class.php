@@ -173,6 +173,7 @@ class SetController extends Controller
                     'username' => $username,
                     'email' => $email,
                     'sinaopenid' => $_SESSION['sina_id'],
+                    'sinaaccesstoken' => $_SESSION['token']['access_token'],
                     'passwd' => md5(I('post.password')),
                     'registertime' => date("Y-m-d H:i:s")
                 );
@@ -192,6 +193,7 @@ class SetController extends Controller
                     'username' => $username,
                     'email' => $email,
                     'sinaopenid' => $_SESSION['sina_id'],
+                    'sinaaccesstoken' => $_SESSION['token']['access_token'],
                     'passwd' => md5(I('post.password')),
                     'registertime' => date("Y-m-d H:i:s")
                 );
