@@ -57,23 +57,22 @@
         <div class="col-sm-12">
             <form action="{:U('/sina/Index/send')}" method="post">
                 <div class="form-group"><textarea name="text" class="form-control" rows="3"></textarea></div>
+                <div class="form-group"><input name="pic" class="form-control" type="text"></div>
                 <div class="form-group"><button type="submit" class="btn btn-default">发送微博</button></div>
             </form>
         </div>
         <hr>
-        <volist name="ms" id="vo">
-            <div class="col-sm-12">
-                {$vo['text']}
-            </div>
-            <div class="col-sm-12">
-                <img src="{$vo.original_pic}" alt="">
-            </div>
-            <volist name="vo.pic_urls" id="pic">
-                <div class="col-sm-4">
-                    <img class="thumbnail_pic" src="{$pic.original_pic}" alt="">
-                </div>
-            </volist>
-        </volist>
+        <!--<volist name="ms" id="vo">-->
+            <!--<div class="col-sm-12">-->
+                <!--{$vo['text']}-->
+            <!--</div>-->
+            <!--<volist name="vo.pic_urls" id="pic">-->
+                <!--<div class="col-sm-2">-->
+                    <!--&lt;!&ndash;{$pic.thumbnail_pic}&ndash;&gt;-->
+                    <!--<img class="thumbnail_pic" src="<?php echo str_replace('thumbnail','large', $pic['thumbnail_pic']) ?>" alt="">-->
+                <!--</div>-->
+            <!--</volist>-->
+        <!--</volist>-->
     </div>
     <hr>
 

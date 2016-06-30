@@ -341,4 +341,24 @@ function sendSinaText($text){
     }
    return $message;
 }
+function sendSinaTextPic($text,$pic){
+    $message=null;
+    vendor('Sina.Sina');
+    $c=new \SaeTClientV2(C('WB_AKEY'),C('WB_SKEY') ,$_SESSION['token']['access_token'] );
+    if( isset($text) ) {
+        $ret = $c->upload( $text,$pic,90,90 );
+        if ( isset($ret['error_code']) && $ret['error_code'] > 0 ) {
+//            发送失败
+            $message= "{$ret['error_code']}:{$ret['error']}";
+        } elseif($ret['error_code']==21301) {
+            $message='清先绑定微博账号';
+        }
+        else
+        {
+//            发送成功
+            $message= 1000;
+        }
+    }
+    return $message;
+}
 

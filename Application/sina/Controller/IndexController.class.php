@@ -3,11 +3,7 @@ namespace Sina\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-//        dump($_SESSION);
-        echo '<hr>';
         $user_message=getUserInfoBySinaId($_SESSION['sina_id']);
-//        dump($user_message);
-        echo '<hr>';
         vendor('Sina.Sina');
         $c=new \SaeTClientV2(C('WB_AKEY'),C('WB_SKEY') ,$_SESSION['token']['access_token'] );
         $ms  = $c->home_timeline();
@@ -16,7 +12,12 @@ class IndexController extends Controller {
         $this->display();
     }
     public function send(){
-        $message=sendSinaText($_REQUEST['text']);
+        if($_REQUEST['pic']==''){
+            $message=sendSinaText($_REQUEST['text']);
+        }else{
+            $message=sendSinaTextPic($_REQUEST['text'],$_REQUEST['pic']);
+        }
+
         $this->ajaxReturn($message);
     }
 }
