@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/Public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/Public/css/user/circle.css">
     <link rel="stylesheet" href="/Public/css/user/user.css">
+    <link rel="stylesheet" href="/Public/css/sina/sina.css">
     <link rel="stylesheet" href="/Public/highlight/styles/zenburn.css">
     <script src="/Public/highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
@@ -63,11 +64,13 @@
         <volist name="ms" id="vo">
             <div class="col-sm-12">
                 {$vo['text']}
-
+            </div>
+            <div class="col-sm-12">
+                <img src="{$vo.original_pic}" alt="">
             </div>
             <volist name="vo.pic_urls" id="pic">
-                <div class="col-sm-12">
-                    <img src="{$pic.thumbnail_pic}" alt="">
+                <div class="col-sm-4">
+                    <img class="thumbnail_pic" src="{$pic.original_pic}" alt="">
                 </div>
             </volist>
         </volist>
