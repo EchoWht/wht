@@ -1,5 +1,6 @@
 <?php
 namespace Sina\Controller;
+use Org\Util\Mail;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
@@ -19,5 +20,13 @@ class IndexController extends Controller {
         }
 
         $this->ajaxReturn($message);
+    }
+    public function sendmail(){
+        $smtpemailto='1585697820@qq.com';
+        $smtpusermail=C('SMTPUSERMAIL');
+        $mailtitle='ok';
+        $mailcontent='ye';
+        $mailtype='HTML';
+        $message=sendEmail($smtpemailto, $smtpusermail, $mailtitle, $mailcontent, $mailtype);
     }
 }

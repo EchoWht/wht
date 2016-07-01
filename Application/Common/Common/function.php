@@ -361,4 +361,26 @@ function sendSinaTextPic($text,$pic){
     }
     return $message;
 }
-
+/*
+ * 发送邮件
+ * */
+function sendEmail($smtpemailto, $smtpusermail, $mailtitle, $mailcontent, $mailtype){
+    $smtpserver=C('SMTPSERVER');
+    $smtpserverport=C('SMTPSERVERPORT');
+    $smtpuser=C('SMTPUSER');
+    $smtppass=C('SMTPPASS');
+    vendor('Mail.Email');
+    $Mail=new smtp($smtpserver,$smtpserverport,true,$smtpuser,$smtppass);
+    //$Mail->debug=true;
+    $state=$Mail->sendmail($smtpemailto, $smtpusermail, $mailtitle, $mailcontent, $mailtype);
+    if($state==''){
+//      发送失败
+        $message=1001;
+    }else{
+//      发送成功
+        $message=1000;
+    }
+    $EmailLog=D('Home/EmailLog');
+    $EmailLog->insertEmailLog($smtpemailto,$smtpusermail,$mailtitle,$mailcontent,null,$message);
+    return $message;
+}
