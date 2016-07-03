@@ -18,4 +18,5 @@ return array(
     'SMTPUSERMAIL' => 'wht@blskye.com',//SMTP服务器的用户邮箱
     'SMTPUSER' => 'wht@blskye.com',//SMTP服务器的用户帐号
     'SMTPPASS' => 'shinecho1234.',//SMTP服务器的用户密码
+    'TMPL_EXCEPTION_FILE'   =>  THINK_PATH.'Tpl/exception.tpl',// 异常页面的模板文件
 );

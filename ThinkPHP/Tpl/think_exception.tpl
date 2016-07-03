@@ -51,8 +51,6 @@ h1{ font-size: 32px; line-height: 48px; }
 <?php }?>
 </div>
 </div>
-<div class="copyright">
-<p><a title="官方网站" href="http://www.thinkphp.cn">ThinkPHP</a><sup><?php echo THINK_VERSION ?></sup> { Fast & Simple OOP PHP Framework } -- [ WE CAN DO IT JUST THINK ]</p>
-</div>
+<h1>HI</h1>
 </body>
 </html>
