@@ -10,7 +10,7 @@ class IndexController extends Controller
     {
         $name = session('name');
         if (!isset($name)) {
-            $this->success('您还没有登录', U('../../login.php/Index'));
+            $this->success('您还没有登录', U('/Login/Index'));
             exit;
         }
         //用户搜索条件
@@ -168,7 +168,7 @@ class IndexController extends Controller
         $Blog=M('Blog');
         $result=$Blog->where('artid='.I('post.artid').' and username="'.I('session.name').'"')->save($blog); ;
         if($result){
-            $this->success('修改成功', '/index.php/Blog/Index');
+            $this->success('修改成功', '/Blog/Index');
         }else{
             $this->error('修改失败');
         }

@@ -1,6 +1,7 @@
 <?php
 return array(
     //'配置项'=>'配置值'
+    'URL_CASE_INSENSITIVE' =>true,//兼容url大小写
     'URL_HTML_SUFFIX' => 'shtml',
     'DEFAULT_THEME' => 'default',
     'TMPL_DETECT_THEME' => true,

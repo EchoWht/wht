@@ -1,8 +1,9 @@
-#缓存
+﻿#缓存
 Runtime
 #phpstrom
 .idea
 .DS_Store
+.project
 #配置文件
 /ThinkPHP/Conf/convention.php
 /uploads/*

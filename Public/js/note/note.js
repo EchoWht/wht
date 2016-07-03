@@ -5,7 +5,7 @@ var host="http://"+window.location.host;
 function noteclick(noteid) {
     $.ajax({
         type: 'get',
-        url: host+"/index.php/Note/Index/click",
+        url: host+"/Note/Index/click",
         data: {noteid:noteid},
         dataType: 'json',
         success:function (result) {

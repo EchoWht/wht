@@ -104,7 +104,7 @@ function deleteNote(noteid) {
 	$("#maintip-foot").show();
 	tipok.onclick = function() {
 		var postStr = "noteid=" + noteid;
-		ajax("/index.php/Note/Index/deletNote.shtml", postStr, function(result) {
+		ajax("/Note/Index/deletNote.shtml", postStr, function(result) {
 			info.innerHTML = result;
 			if(result=='ok'){
 					$("#mask").hide();
@@ -126,7 +126,7 @@ function deleteBlog(artid) {
 	$("#maintip-foot").show();
 	tipok.onclick = function() {
 		var postStr = "artid=" + artid;
-		ajax("/index.php/Blog/Index/delBlog.shtml", postStr, function(result) {
+		ajax("/Blog/Index/delBlog.shtml", postStr, function(result) {
 			info.innerHTML = result;
 			if(result=='ok'){
 				$("#mask").hide();
@@ -144,7 +144,7 @@ function updateNoteTip(noteid, noteremark1) {
 	$("#maintip-foot").hide();
 	//	var notetip=document.getElementById("notetip").value;
 	var postStr = "noteid=" + noteid + "&noteremark1=" + noteremark1;
-	ajax("/index.php/Note/Index/updateNoteTip.shtml", postStr, function(result) {
+	ajax("/Note/Index/updateNoteTip.shtml", postStr, function(result) {
 		if(result=='ok'){
 			info.innerHTML = "已保存";
 			$("#mask").show();
@@ -159,7 +159,7 @@ function updateNoteContent(noteid, notecontent) {
 	$("#maintip-foot").hide();
 	//	var notetip=document.getElementById("notetip").value;
 	var postStr = "noteid=" + noteid + "&notecontent=" + notecontent;
-	ajax("/index.php/Note/Index/updateNoteContent.shtml", postStr, function(result) {
+	ajax("/Note/Index/updateNoteContent.shtml", postStr, function(result) {
 		if(result=='ok'){
 			info.innerHTML = "已保存";
 			$("#mask").show();
@@ -210,7 +210,7 @@ function validation() {
 		return false;
 	}
 	var postStr = "username=" + name + "&passwd=" + pwd;
-	ajax("/login.php/Index/login.html", postStr, function(result) {
+	ajax("/Login/Index/login.html", postStr, function(result) {
 		
 	});
 }
@@ -323,7 +323,7 @@ function changeCodeStyle(stylename){
 //删除分类
 function delcat(id){
 	var postStr = "id=" + id;
-	ajax("/index.php/User/Set/delCat.shtml", postStr, function(result) {
+	ajax("/User/Set/delCat.shtml", postStr, function(result) {
 
 		if(result=='ok'){
 			document.getElementById("span"+id+"").style.cssText='display:none'
@@ -340,7 +340,7 @@ function catkey(cat){
 function sharesina(noteid) {
 	$.ajax({
 		type:'post',
-		url:host+'/index.php/Note/Index/sharesina',
+		url:host+'/Note/Index/sharesina',
 		data:{
 			noteid:noteid
 		},
@@ -358,7 +358,7 @@ function sharesina(noteid) {
 function shareBlogsina(blogid) {
 	$.ajax({
 		type:'post',
-		url:host+'/index.php/Blog/Index/sharesina',
+		url:host+'/Blog/Index/sharesina',
 		data:{
 			blogid:blogid
 		},

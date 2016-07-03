@@ -6,7 +6,7 @@ class IndexController extends Controller {
 		//查询用户的note
 		$name = session('name');
 		if(!isset($name)){
-			 $this->success('您还没有登录', U('../../login.php/Index'));
+			 $this->success('您还没有登录', U('/Login/Index'));
 			exit;
 		}
 		//用户搜索条件

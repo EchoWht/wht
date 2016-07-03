@@ -13,7 +13,7 @@ $("#inp-username").blur(
         }
         $.ajax({
             type:'get',
-            url:host+'/index.php/User/Set/user',
+            url:host+'/User/Set/user',
             data:{
                 username:username,
             },
@@ -49,7 +49,7 @@ $("#inp-email").blur(
         }
         $.ajax({
             type:'get',
-            url:host+'/index.php/User/Set/email',
+            url:host+'/User/Set/email',
             data:{
                 email:email,
             },
@@ -71,7 +71,7 @@ $('#step_one').click(
         var passwd=$("#inp-passwd").val();
         $.ajax({
             type:'post',
-            url:host+'/index.php/User/Set/sinabound',
+            url:host+'/User/Set/sinabound',
             data:{
                 username:username,
                 email:email,

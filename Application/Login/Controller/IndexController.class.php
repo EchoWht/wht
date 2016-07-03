@@ -111,10 +111,10 @@ class IndexController extends Controller
             isBoundUserBySina($sina_id);
             if (isBoundUserBySina($sina_id) == 0) {
                 $_SESSION['sina_id'] = $sina_id;
-                $this->success('通过微博登录成功', '/index.php/User/Set/sinabounduser');
+                $this->success('通过微博登录成功', '/User/Set/sinabounduser');
             } else {
                 $_SESSION['name'] = isBoundUserBySina($sina_id)['username'];
-                $this->success('通过微博登录成功', '/index.php/');
+                $this->success('通过微博登录成功', '/');
             }
 //			$this->success('通过微博登录成功', '/index.php/User/Index/user');
         } else {

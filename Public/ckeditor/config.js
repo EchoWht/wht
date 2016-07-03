@@ -44,5 +44,5 @@ CKEDITOR.editorConfig = function( config ) {
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 	config.height = 500; //高度
 	/*配置图片上传处理*/
-	config.filebrowserUploadUrl="/index.php/Blog/Index/upload";
+	config.filebrowserUploadUrl="/Blog/Index/upload";
 };

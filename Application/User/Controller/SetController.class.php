@@ -17,7 +17,7 @@ class SetController extends Controller
     {
         $name = session('name');
         if (!isset($name)) {
-            $this->success('您还没有登录', U('../../login.php/Index'));
+            $this->success('您还没有登录', U('/Login/Index'));
             exit;
         }
         $this->assign('name', $name);
@@ -28,7 +28,7 @@ class SetController extends Controller
     {
         $name = session('name');
         if (!isset($name)) {
-            $this->success('您还没有登录', U('../../login.php/Index'));
+            $this->success('您还没有登录', U('/Login/Index'));
             exit;
         }
         $this->assign('name', $name);
@@ -43,7 +43,7 @@ class SetController extends Controller
     {
         $name = session('name');
         if (!isset($name)) {
-            $this->success('您还没有登录', U('../../login.php/Index'));
+            $this->success('您还没有登录', U('/Login/Index'));
             exit;
         }
         $this->assign('name', $name);
@@ -59,7 +59,7 @@ class SetController extends Controller
     {
         $name = session('name');
         if (!isset($name)) {
-            $this->success('您还没有登录', U('../../login.php/Index'));
+            $this->success('您还没有登录', U('/Login/Index'));
             exit;
         }
         $this->assign('name', $name);
@@ -75,7 +75,7 @@ class SetController extends Controller
     {
         $name = session('name');
         if (!isset($name)) {
-            $this->success('您还没有登录', U('../../login.php/Index'));
+            $this->success('您还没有登录', U('/Login/Index'));
             exit;
         }
         $this->assign('name', $name);
@@ -110,7 +110,7 @@ class SetController extends Controller
     {
         $name = session('name');
         if (!isset($name)) {
-            $this->success('您还没有登录', U('../../login.php/Index'));
+            $this->success('您还没有登录', U('/Login/Index'));
             exit;
         }
         $this->assign('name', $name);
@@ -133,7 +133,7 @@ class SetController extends Controller
         if (isset($_SESSION['sina_id']) && isBoundUserBySina($_SESSION['sina_id']) == 0) {
 
         } else {
-            $this->success('走你~', '/index.php/');
+            $this->success('走你~', '/');
             exit();
         }
         $this->display();

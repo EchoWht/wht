@@ -57,7 +57,7 @@
                    <span>其他登录方式：</span>
                 </div>
                 <div class="col-lg-5">
-                    <a href="{:U('Login/Index/sina')}"><img src="/Public/images/sina/login.png"/></a>
+                    <a href="{:U('/Login/Index/sina')}"><img src="/Public/images/sina/login.png"/></a>
                 </div>
             </div>
         </section>
@@ -71,8 +71,8 @@
     console.log("url:"+window.location.pathname);
     $("input[name=referurl]").val(referurl);
     var actionurl=document.getElementById("defaultForm").action;
-    var usernameurl='http://'+window.location.host+'/index.php/Login/Index/isUser';
-    var passwordurl='http://'+window.location.host+'/index.php/Login/Index/isPassword';
+    var usernameurl='http://'+window.location.host+'/Login/Index/isUser';
+    var passwordurl='http://'+window.location.host+'/Login/Index/isPassword';
     console.log(usernameurl);
     $(document).ready(function() {
         $('#defaultForm').bootstrapValidator({
