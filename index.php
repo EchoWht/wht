@@ -26,6 +26,7 @@ define('APP_PATH','./Application/');
 //define('BIND_MODULE','Jp');
 //define('BIND_MODULE','Message');
 //define('BIND_MODULE','sina');
+//define('BIND_MODULE','Test');
 define('TMPL_PATH','./Public/Template/');
 
 //define('BUILD_CONTROLLER_LIST','Index,User,Menu');
