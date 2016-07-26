@@ -9,18 +9,20 @@ class IndexController extends Controller
     {
         $arr = array(
             'result' => 1,
-            array(
-                'id' => 1,
-                'usename' => 'Blskye',
-                'title' => "Hello World",
-                'content' => 'Hello !!!!!!'
-            ),
-            array(
-                'id' => 2,
-                'usename' => 'Blskye',
-                'title' => "Hello World",
-                'content' => 'Hello !!!!!!'
-            ),
+            "returndata" => array(
+                array(
+                    'id' => 1,
+                    'usename' => 'Blskye',
+                    'title' => "Hello World",
+                    'content' => 'Hello !!!!!!'
+                ),
+                array(
+                    'id' => 2,
+                    'usename' => 'Blskye',
+                    'title' => "Hello World",
+                    'content' => 'Hello !!!!!!'
+                )
+            )
         );
         $this->ajaxReturn($arr);
     }
