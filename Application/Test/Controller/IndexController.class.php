@@ -10,6 +10,7 @@ class IndexController extends Controller
         $arr = array(
             'result'=>1,
             array(
+<<<<<<< HEAD
                 'id' => 1,
                 'usename' => 'Blskye',
                 'title' => "Hello World",
@@ -20,6 +21,18 @@ class IndexController extends Controller
                 'usename' => 'Blskye',
                 'title' => "Hello World",
                 'content' => 'Hello !!!!!!'
+=======
+                'id'=>1,
+                'username'=>'Blskye',
+                'title'=>"Hello World",
+                'content'=>'Hello !!!!!!'
+            ),
+            array(
+                'id'=>2,
+                'username'=>'Blskye',
+                'title'=>"Hello World",
+                'content'=>'Hello !!!!!!'
+>>>>>>> d1995ea1d3dd9f2c162deab6e6602956c37cbd3b
             ),
         );
         $this->ajaxReturn($arr);
