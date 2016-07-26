@@ -12,13 +12,13 @@ class IndexController extends Controller
             "returndata" => array(
                 array(
                     'id' => 1,
-                    'usename' => 'Blskye',
+                    'username' => 'Blskye',
                     'title' => "Hello World",
                     'content' => 'Hello !!!!!!'
                 ),
                 array(
                     'id' => 2,
-                    'usename' => 'Blskye',
+                    'username' => 'Blskye',
                     'title' => "Hello World",
                     'content' => 'Hello !!!!!!'
                 )
