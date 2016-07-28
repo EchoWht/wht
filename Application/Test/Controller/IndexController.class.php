@@ -27,6 +27,13 @@ class IndexController extends Controller
         );
         $this->ajaxReturn($arr);
     }
+
+
+    /*
+     *
+     *测试数据
+     *
+     */
     public function artPost(){
         $key=$_POST['key'];
         $arr=array();
