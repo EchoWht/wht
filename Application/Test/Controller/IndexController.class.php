@@ -58,7 +58,13 @@ class IndexController extends Controller
                         'username'=>"Wanghaotian",
                         'title'=>'怎么样',
                         'content'=>'挺好'
-                    )
+                    ),
+                     array(
+                         'id'=>4,
+                         'username'=>"Wanghaotian",
+                         'title'=>'android的开发',
+                         'content'=>'实战'
+                     )
 
                 )
             );
