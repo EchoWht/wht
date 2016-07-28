@@ -5,6 +5,7 @@ use Think\Controller;
 
 class IndexController extends Controller
 {
+
     public function index()
     {
         $arr = array(
@@ -13,19 +14,50 @@ class IndexController extends Controller
                 array(
                     'id' => 1,
                     'username' => 'Blskye',
-                    'title' => "Hello World",
-                    'content' => 'Hello !!!!!!'
+                    'title' => "Hello",
+                    'content' => 'Hello World'
                 ),
                 array(
                     'id' => 2,
                     'username' => 'Blskye',
-                    'title' => "Hello World",
-                    'content' => 'Hello !!!!!!'
+                    'title' => "你好",
+                    'content' => '你好世界'
                 )
             )
         );
         $this->ajaxReturn($arr);
     }
+    public function artPost(){
+        $key=$_POST['key'];
+        $arr=array();
+        if ($key==1){
+            $arr = array(
+                'result' => 1,
+                "returndata" => array(
+                    array(
+                        'id' => 1,
+                        'username' => 'Blskye',
+                        'title' => "Hello",
+                        'content' => 'Hello World'
+                    ),
+                    array(
+                        'id' => 2,
+                        'username' => 'Blskye',
+                        'title' => "你好",
+                        'content' => '你好世界'
+                    )
+                )
+            );
+        }else{
+            $arr = array(
+                'result' => 0
+            );
+        }
+
+        $this->ajaxReturn($arr);
+    }
+
+
     public function drink(){
         $arr = array(
             'result' => 1,
@@ -58,6 +90,10 @@ class IndexController extends Controller
         );
         $this->ajaxReturn($arr);
     }
+
+
+
+
     public function drinkPost(){
         $key=$_POST['key'];
         $arr=array();
