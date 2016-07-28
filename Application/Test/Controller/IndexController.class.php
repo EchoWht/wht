@@ -58,4 +58,46 @@ class IndexController extends Controller
         );
         $this->ajaxReturn($arr);
     }
+    public function drinkPost(){
+        $key=$_POST['key'];
+        $arr=array();
+        if ($key==1){
+            $arr = array(
+                'result' => 1,
+                "returndata" => array(
+                    array(
+                        'id' => 1,
+                        'drinkname' => '咖啡',
+                        'price' => 12,
+                        'pic'=>'coffee'
+                    ),
+                    array(
+                        'id' => 2,
+                        'drinkname' => '橙汁',
+                        'price' => 12,
+                        'pic'=>'orange'
+                    ),
+                    array(
+                        'id' => 3,
+                        'drinkname' => '苹果汁',
+                        'price' => 10,
+                        'pic'=>'apple'
+                    ),
+                    array(
+                        'id' => 4,
+                        'drinkname' => '葡萄汁',
+                        'price' => 11,
+                        'pic'=>'grape'
+                    ),
+                )
+            );
+
+        }else{
+            $arr = array(
+                'result' => 0
+            );
+        }
+
+        $this->ajaxReturn($arr);
+    }
 }
