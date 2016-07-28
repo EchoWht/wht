@@ -52,7 +52,14 @@ class IndexController extends Controller
                         'username' => 'Blskye',
                         'title' => "你好",
                         'content' => '你好世界'
+                    ),
+                    array(
+                        'id'=>3,
+                        'username'=>"Wanghaotian",
+                        'title'=>'怎么样',
+                        'content'=>'挺好'
                     )
+
                 )
             );
         }else{
