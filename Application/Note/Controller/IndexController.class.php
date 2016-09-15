@@ -156,14 +156,13 @@ class IndexController extends Controller {
 	 * */
 	public function pic(){
 		$Note = M("Note");
-		$note= $Note->where("notepic!=''")->select();
+		$note= $Note->where("notepic!=''")->limit(0,50)->select();
 //		dump($note);
 		for ($i=0;$i<count($note);$i++){
 			$filename=time().rand(1000,9999).'.png';
 			$notes[$i]['notepic']=$filename;
 			$result=$Note->where('noteid='.$note[$i]['noteid'])->save($notes[$i]);
 			$url=$note[$i]['noteurl'];
-			sleep(5);
 			file_get_contents("http://blskye.com:8888/?pic=$filename&url=$url");
 			echo $filename."<br>";
 			echo $url;
