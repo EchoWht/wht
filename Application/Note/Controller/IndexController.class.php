@@ -156,7 +156,7 @@ class IndexController extends Controller {
 	 * */
 	public function pic(){
 		$Note = M("Note");
-		$note= $Note->where("notepic=''")->select();
+		$note= $Note->where("notepic!=''")->select();
 		dump($note);
 		for ($i=0;$i<count($note);$i++){
 			$filename=time().rand(1000,9999).'.png';
