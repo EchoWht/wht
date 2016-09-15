@@ -151,4 +151,20 @@ class IndexController extends Controller {
 		}
 		$this->ajaxReturn($message) ;
 	}
+	/*
+	 * 批量生成note快照
+	 * */
+	public function pic(){
+		$Note = M("Note");
+		$note= $Note->where("notepic=''")->select();
+		dump($note);
+		for ($i=0;$i<count($note);$i++){
+			$filename=time().rand(1000,9999).'.png';
+			$notes[$i]['notepic']=$filename;
+			$result=$Note->where('noteid='.$note[$i]['noteid'])->save($notes[$i]);
+			$url=$note[$i]['noteurl'];
+			file_get_contents("http://blskye.com:8888/?pic=$filename&url=$url");
+			echo $filename."<br>";
+		}
+	}
 }
