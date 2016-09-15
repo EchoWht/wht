@@ -166,6 +166,7 @@ class IndexController extends Controller {
 			sleep(5);
 			file_get_contents("http://blskye.com:8888/?pic=$filename&url=$url");
 			echo $filename."<br>";
+			echo $url;
 		}
 	}
 }
