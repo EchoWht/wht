@@ -66,6 +66,7 @@ class IndexController extends Controller {
 		/***************根据url获得title end**********************/
 //		生成快照
 		$filename=snapshot($note['noteurl']);
+		dump("s");
 		$note=array(
 					'noteurl'=>I('post.noteurl',0),
 					'noteremark1'=>I('post.noteremark1',0),
