@@ -64,13 +64,16 @@ class IndexController extends Controller {
 			$title[1] = $note['noteurl'];
 		}
 		/***************根据url获得title end**********************/
+//		生成快照
+		$filename=snapshot($note['noteurl']);
 		$note=array(
 					'noteurl'=>I('post.noteurl',0),
 					'noteremark1'=>I('post.noteremark1',0),
 					'notecontent'=>I('post.notecontent',0),
 					'notedate'=> date("Y-m-d H:i:s"),
 					'username'=> I('session.name',0),
-					'notetitle'=> $title[1]
+					'notetitle'=> $title[1],
+					'notepic'=>$filename
 				);
 //		dump($note);
 		$Note = M("Note");

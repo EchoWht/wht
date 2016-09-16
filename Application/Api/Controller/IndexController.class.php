@@ -72,13 +72,15 @@ class IndexController extends Controller {
 		}
 	}
 	private function addNote(){
+		$filename=snapshot(I('post.my_url',0));
 		$note=array(
 			'noteurl'=>I('post.my_url',0),
 			'noteremark1'=>'other',
 //			'notecontent'=>I('post.notecontent',0),
 			'notedate'=> date("Y-m-d H:i:s"),
 			'username'=> I('session.name',0),
-			'notetitle'=> I('post.url_title',0)
+			'notetitle'=> I('post.url_title',0),
+			'notepic'=>$filename
 		);
 		$Note = M("Note");
 		$result=$Note->add($note);

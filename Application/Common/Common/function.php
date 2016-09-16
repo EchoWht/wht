@@ -384,3 +384,9 @@ function sendEmail($smtpemailto, $smtpusermail, $mailtitle, $mailcontent, $mailt
     $EmailLog->insertEmailLog($smtpemailto,$smtpusermail,$mailtitle,$mailcontent,null,$message);
     return $message;
 }
+/*根据链接生成快照*/
+function snapshot($url){
+    $filename=time().rand(1000,9999).'.png';
+    file_get_contents("http://blskye.com:8888/?pic=$filename&url=$url");
+    return $filename;
+}
