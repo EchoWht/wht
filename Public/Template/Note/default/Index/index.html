@@ -69,7 +69,7 @@
                         <p>{$vo.notetitle}</p>
                         <textarea class="urlcontent" name="notecontent" onblur="updateNoteContent({$vo.noteid},this.value)"
                                   rows="1" cols="" class="grid_textarea">{$vo.notecontent}</textarea>
-                        <img src="/uploads/notepic/{$vo.notepic}" alt="{$vo.notetitle}">
+                        <!--<img src="/uploads/notepic/{$vo.notepic}" alt="{$vo.notetitle}">-->
                         <a onclick="noteclick({$vo.noteid})" href="{$vo.noteurl}" target="_blank" class="btn btn-default">打开</a>
                     </div>
                     <div class="panel-footer">
