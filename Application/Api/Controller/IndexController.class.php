@@ -72,9 +72,8 @@ class IndexController extends Controller {
 		}
 	}
 	private function addNote(){
-//		$filename=snapshot(I('post.my_url',0));
-		$filename=time().rand(1000,9999).'.png';
-		file_get_contents("http://blskye.com:8888/?pic=$filename&url=I('post.my_url',0)");
+		$filename=snapshot(I('post.my_url',0));
+		
 		$note=array(
 			'noteurl'=>I('post.my_url',0),
 			'noteremark1'=>'other',
